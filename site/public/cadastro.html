@@ -6,13 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AquaTech | Cadastro</title>
-
+    <title>POONDA!| Cadastro</title>
 
     <script src="./js/funcoes.js"></script>
 
-
-    <link rel="icon" href="./assets/icon/favicon2.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -25,7 +22,7 @@
     <!-- HEADER -->
     <div class="header">
         <div class="container">
-            <h1 class="titulo">Poonda!</h1>
+            <span class="titulo">Poonda!</span>
         </div>
     </div>
     <!-- FIM DO HEADER -->
@@ -34,6 +31,9 @@
     <!-- FORMULÁRIO DE INFORMAÇÕES -->
     <div class="caixa-formulario" id="formulario_usuario" style="display: flex;">
         <div class="container">
+            
+            <p>Crie sua conta!</p>
+
             <div class="campo">
                 <label for="nome">Nome</label>
                 <input type="text" id="ipt_nome">               
@@ -58,9 +58,10 @@
                 <label for="password">Confirmar Senha</label>
                 <input type="password" id="ipt_confirmacaoSenha">
             </div>
-            <button class="cadastrar">TORNE-SE UM DRAGÃO!</button>
+            <button class="cadastrar">TORNE-SE UM DRAGÃO GUERREIRO!</button>
         </div>  
     </div>
+    <!-- FIM DO FORMULÁRIO -->
 
 </body>
 
@@ -81,7 +82,7 @@
 
         if (nomeVar == "" || sobrenomeVar == "" || emailVar == ""  || confirmarEmail == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            mensagem_erro.innerHTML = "Insira todos os campos para prosseguir!";
 
             finalizarAguardar();
             return false;
