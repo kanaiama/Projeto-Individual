@@ -28,6 +28,12 @@
     border-radius: 10px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container p {
     width: 540px;
     height: 65px;
@@ -43,7 +49,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 40px;
 
 }
 
@@ -57,18 +62,41 @@
 }
 
 .campo label {
+    margin-top: 10px;
     display: flex;
     align-self: flex-start;
-    margin-left: 120px;
 }
 
 .campo2 {
-    margin-top: -30px;
-    margin-left: 120px;
+    margin-top: 10px;
     font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .esqueci_senha {
     font-size: 30px;
-    gap: 300px;
+    display: flex;
+    align-self: flex-end;
 }
+
+.btn_login {
+    width: 450px;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 50px;
+    background-color: #E00909;
+    color: white;
+    text-align: center;
+}
+
+
+
