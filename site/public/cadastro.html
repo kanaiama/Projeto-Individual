@@ -22,87 +22,45 @@
 
 <body>
 
-    <!--header inicio-->
+    <!-- HEADER -->
     <div class="header">
         <div class="container">
-            <h1 class="titulo">AquaTech</h1>
-            <ul class="navbar">
-                <li>
-                    <a href="./index.html">
-                        Inicial
-                    </a>
-                </li>
-                <li>
-                    <a href="./simulador.html">Simulador</a>
-                </li>
-                <li>|</li>
-                <li>
-                    <a href="./login.html">Login</a>
-                </li>
-                <li class="agora">
-                    <a href="./cadastro.html">Cadastro</a>
-                </li>
-            </ul>
+            <h1 class="titulo">Poonda!</h1>
         </div>
     </div>
-    <!--header fim-->
+    <!-- FIM DO HEADER -->
 
 
-    <div class="banner ">
-        <div class="alerta_erro">
-            <div class="card_erro" id="cardErro">
-                <span id="mensagem_erro"></span>
-            </div>
-        </div>
-        <div class="container tamanho-conteudo">
-            <div class="card medio">
-                <h2>Bem-vindo!</h2>
-                <div class="formulario">
-
-                    <!--
-                         Para inserir mais um campo, copie uma das inputs abaixo.
-                         Assim que inserir vá para o script abaixo.
-                     -->
-
-                    <span class="tipo_campo">Nome:</span>
-                    <input id="nome_input" type="text" placeholder="Seu nome">
-
-                    <span class="tipo_campo">E-mail:</span>
-                    <input id="email_input" type="text" placeholder="meuemail@provedor.com">
-
-                    <span class="tipo_campo">Senha:</span>
-                    <input id="senha_input" type="password" placeholder="******">
-
-                    <span class="tipo_campo">Confirmação da Senha:</span>
-                    <input id="confirmacao_senha_input" type="password" placeholder="******">
-
-                    <button class="btn" onclick="cadastrar()">Cadastrar</button>
-
-                </div>
-                <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
-                </div>
-
-                <div id="div_erros_login">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--footer inicio-->
-    <div class="footer">
+    <!-- FORMULÁRIO DE INFORMAÇÕES -->
+    <div class="caixa-formulario" id="formulario_usuario" style="display: flex;">
         <div class="container">
-            <h4>Feito com amor por um aluno &hearts; SPTech &copy; 2022
-                <br>
-                <span class="version">
-                    v1.0.0
-                </span>
-            </h4>
-        </div>
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="ipt_nome">               
+            </div>
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="ipt_sobrenome">
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="text" id="ipt_email">
+            </div>
+            <div class="campo">
+                <label for="email">Confirmar E-mail</label>
+                <input type="email" id="ipt_confirmarEmail">
+            </div>
+            <div class="campo2">
+                <label for="password">Senha</label>
+                <input type="password" id="ipt_senha">
+            </div>
+            <div class="campo2">
+                <label for="password">Confirmar Senha</label>
+                <input type="password" id="ipt_confirmacaoSenha">
+            </div>
+            <button class="cadastrar">TORNE-SE UM DRAGÃO!</button>
+        </div>  
     </div>
-    <!--footer fim-->
-
 
 </body>
 
@@ -114,12 +72,14 @@
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
-        var nomeVar = nome_input.value;
-        var emailVar = email_input.value;
-        var senhaVar = senha_input.value;
-        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var nomeVar = ipt_nome.value;
+        var sobrenomeVar = ipt_sobrenome.value;
+        var emailVar = ipt_email.value;
+        var confirmarEmailVar = ipt_confirmarEmail.value;
+        var senhaVar = ipt_senha.value;
+        var confirmacaoSenhaVar = ipt_confirmarSenha.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || sobrenomeVar == "" || emailVar == ""  || confirmarEmail == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 
