@@ -127,8 +127,12 @@
     padding: 10px;
     font-size: 50px;
     background-color: #E00909;
-    color: white;
     text-align: center;
+}
+
+.btn_login a {
+    text-decoration: none;
+    color: white;
 }
 
 .frase_criar_conta {
