@@ -44,7 +44,7 @@
 
     <!-- BANNER -->
     <div class="sobrecriador">
-        <div class="banner1 zindex">
+        <div class="banner1">
             <div class="container">
                 <div class="tituloFrase">
                     <p class="topico">QUEM É WILSON?</p>
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="banner2 zindex" >
+        <div class="banner2" >
             <div class="container">
                 <div class="tituloFrase">
                     <p class="topico">RELAÇÃO CRIADOR E KUNG FU PANDA</p>
@@ -62,11 +62,42 @@
             </div>
         </div>
     </div>
+    
+    <div class="container_botao">
+        <div class="botao">
+            <button onclick="primeiroBTN()" class="primeiro_botao">
+                QUEM É WILSON?
+            </button>
+
+            <button onclick="segundoBTN()" class="segundo_botao">
+                TEMA
+            </button>
+
+            <button onclick="terceiroBTN()" class="terceiro_botao">
+                VALORES
+            </button>
+        </div>
+    </div>
 
     <div class="zindex"></div>
-
-    
 
 </body>
 
 </html>
+
+<script>
+    function primeiroBTN () {
+        div1.classList.remove('zindex')
+        div2.classList.add('zindex')
+    }
+
+    function segundoBTN () {
+        div1.classList.remove('zindex')
+        div2.classList.add('zindex')
+    }
+
+    function terceiroBTN () {
+        div1.classList.remove('zindex')
+        div2.classList.add('zindex')
+    }
+</script>
