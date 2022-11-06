@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jomhuria', sans-serif;;
+}
+
+
+/*  HEADER  */
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #110D0B;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 60px;
+}
+
+.logo {
+    margin-left: 25px;
+    display: flex;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.logo p {
+    color: #DAE2E7;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.navbar{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 30px;
+
+}
+
+.navbar ul {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #DAE2E7;
+    display: flex;
+}
+
+/*  FIM DO HEADER  */
+
+
+
+/* BANNER INICIO */
+
+
+.sobrecriador {
+    position: relative;
+    top: 0;
+}
+
+    /* Quem é Wilson? */
+
+.banner1  {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: 4;
+    transition: 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/imgs/backgroundSobreCriador1.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+.banner1.zindex {
+    opacity: 1;
+    z-index: 5;
+}
+
+.topico {
+    color: #e3a507;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.frase {
+    display: flex;
+    justify-content: center;
+    color: #F1F1F1;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    width: 600px;
+}
+
+    /*Relação Wilson e Tema escolhido */
+
+.banner2 {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: 4;
+    transition: 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/imgs/backgroundSobreCriador2.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.banner2.zindex{
+    opacity: 1;
+    z-index: 5;
+}
