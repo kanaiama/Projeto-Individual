@@ -58,13 +58,13 @@
                 
                 <div class="campo_senha">
                     <div class="campo2">
-                        <label for="ipt_senha">Senha</label>
+                        <label for="ipt_senha" id="label_senha">Senha</label>
                         <input type="password" id="ipt_senha">
                     </div>
 
                     <div class="campo2">
-                        <label for="ipt_confirmacaoSenha">Confirmar Senha</label>
-                        <input type="password" id="ipt_confirmacaoSenha">
+                        <label for="ipt_confirmacaoSenha" id="label_confirmacaoSenha">Confirmar Senha</label>
+                        <input type="password" id="ipt_confirmacaoSenha" onkeyup="confirmar_senha()">
                     </div>
                 </div>
                 
@@ -80,6 +80,35 @@
 </html>
 
 <script>
+    // Confirmação de senha
+    function confirmar_senha (){
+        var senha = ipt_senha.value
+        var confirmarSenha = ipt_confirmacaoSenha.value
+
+
+        if(confirmarSenha != senha) {
+            ipt_confirmacaoSenha.style.background = "#D91A2A"
+
+            label_senha.style.color = "rgb(75, 75, 75)"
+            ipt_senha.style.background = " rgb(226, 226, 226)";
+
+
+
+            return(false)
+
+
+        } else {
+            ipt_confirmacaoSenha.style.background = "##97ED8A"
+
+            label_senha.style.color = "#97ED8A"
+            ipt_senha.style.background = "#97ED8A";
+        }
+
+
+
+    }
+
+
     function cadastrar() {
         aguardar();
 
@@ -88,11 +117,10 @@
         var nomeVar = ipt_nome.value;
         var sobrenomeVar = ipt_sobrenome.value;
         var emailVar = ipt_email.value;
-        var confirmarEmailVar = ipt_confirmarEmail.value;
         var senhaVar = ipt_senha.value;
         var confirmacaoSenhaVar = ipt_confirmarSenha.value;
 
-        if (nomeVar == "" || sobrenomeVar == "" || emailVar == ""  || confirmarEmail == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || sobrenomeVar == "" || emailVar == ""  || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Insira todos os campos para prosseguir!";
 
