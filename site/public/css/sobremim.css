@@ -134,50 +134,49 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* BOTOES */
 
 .container_botao {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end; 
+    height: 670px;
+    padding: 120px;
 }
 
-
-.botao {
+.botoes {
     display: flex;
-    padding: 300px;
- 
+    align-items: center;
+    gap: 88px;
 }
+
 
 .primeiro_botao {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
     text-decoration: none;
     color: black;
     background-color: #7B4141;
     font-weight: bold;
     padding: 6px;
     font-size: 1.3rem;
+    width: 20%;
+}
+
+.segundo_botao {
+    text-decoration: none;
+    color: black;
+    background-color: #7B4141;
+    font-weight: bold;
+    padding: 6px;
+    font-size: 1.3rem;
+    width: 20%;
+}
+
+.terceiro_botao {
+    text-decoration: none;
+    color: black;
+    background-color: #7B4141;
+    font-weight: bold;
+    padding: 6px;
+    font-size: 1.3rem;
+    width: 20%;
 }
