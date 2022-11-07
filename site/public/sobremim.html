@@ -44,26 +44,26 @@
 
     <!-- BANNER -->
     <div class="sobrecriador">
-        <div class="banner1">
+        <div class="banner1 zindex" id="banner1">
             <div class="container">
                 <div class="tituloFrase">
                     <p class="topico">QUEM É WILSON?</p>
-                    <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur porro illo veniam, nihil consequatur tenetur laborum doloribus error, quos atque tempora sed quasi sit corporis omnis odit magni modi. Voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem commodi aliquid beatae dolorum sapiente</p>
+                    <p class="frase">lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur porro illo veniam, nihil consequatur tenetur laborum doloribus error, quos atque tempora sed quasi sit corporis omnis odit magni modi. Voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem commodi aliquid beatae dolorum sapiente</p>
                 </div>
             </div>
         </div>
 
-        <div class="banner2" >
+        <div class="banner2 zindex" id="banner2" >
             <div class="container">
                 <div class="tituloFrase">
                     <p class="topico">RELAÇÃO CRIADOR E KUNG FU PANDA</p>
-                    <p class="frase">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quidem reiciendis recusandae dolores sed ex enim odit dicta iure. Ipsum delectus suscipit tempora, dignissimos facilis error? Vero repudiandae nam velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam, ex rem dolorum aut reprehenderit laboriosam fuga animi eveniet voluptatem! Suscipit nihil est similique, aspernatur dolorum rerum et aliquam iusto.</p>
+                    <p class="frase">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ducimus quaerat necessitatibus delectus consectetur modi illo atque rem molestias voluptatem doloremque consequatur debitis repellendus nesciunt fugit earum, dolores ex tempore. lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta quaerat quas ut harum blanditiis! Nam commodi, dolorum asperiores nostrum inventore omnis dicta nemo nobis amet similique itaque consequatur fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quidem reiciendis recusandae dolores sed ex enim odit dicta iure. Ipsum delectus suscipit tempora, dignissimos facilis error? Vero repudiandae nam velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam, ex rem dolorum aut reprehenderit laboriosam fuga animi eveniet voluptatem! Suscipit nihil est similique, aspernatur dolorum rerum et aliquam iusto.</p>
                 </div>
             </div>
         </div>
 
         <div class="container_botao">
-            <div class="botoes">
+            <div class="botoes zindex">
                 <button onclick="primeiroBTN()" class="primeiro_botao">
                     QUEM É WILSON?
                 </button>
@@ -79,6 +79,7 @@
         </div>
 
 
+
     </div>
 
     <div class="zindex"></div>
@@ -89,13 +90,13 @@
 
 <script>
     function primeiroBTN () {
-        div1.classList.remove('zindex')
-        div2.classList.add('zindex')
+        banner2.classList.remove('zindex')
+        banner1.classList.add('zindex')
     }
 
     function segundoBTN () {
-        div1.classList.remove('zindex')
-        div2.classList.add('zindex')
+        banner1.classList.remove('zindex')
+        banner2.classList.add('zindex')
     }
 
     function terceiroBTN () {
