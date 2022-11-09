@@ -59,7 +59,7 @@
                 <div class="campo_senha">
                     <div class="campo2">
                         <label for="ipt_senha" id="label_senha">Senha</label>
-                        <input type="password" id="ipt_senha">
+                        <input type="password" id="ipt_senha" onkeyup="senha()">
                     </div>
 
                     <div class="campo2">
@@ -80,17 +80,19 @@
 </html>
 
 <script>
-    // Confirmação de senha
-    function confirmar_senha (){
+
+    function senha () {
         var senha = ipt_senha.value
         var confirmarSenha = ipt_confirmacaoSenha.value
 
 
+
         if(confirmarSenha != senha) {
             ipt_confirmacaoSenha.style.background = "#D91A2A"
+            label_confirmacaoSenha.style.color = "red"
 
-            label_senha.style.color = "rgb(75, 75, 75)"
-            ipt_senha.style.background = " rgb(226, 226, 226)";
+            label_senha.style.color = "red"
+            ipt_senha.style.background = "#D91A2A";
 
 
 
@@ -98,10 +100,45 @@
 
 
         } else {
-            ipt_confirmacaoSenha.style.background = "##97ED8A"
+            ipt_confirmacaoSenha.style.background = "#97ED8A"
+            label_confirmacaoSenha.style.color = "green"
 
-            label_senha.style.color = "#97ED8A"
+            label_senha.style.color = "green"
             ipt_senha.style.background = "#97ED8A";
+
+            return(true)
+        }
+
+
+
+    }
+    // Confirmação de senha
+    function confirmar_senha (){
+        var senha = ipt_senha.value
+        var confirmarSenha = ipt_confirmacaoSenha.value
+
+
+
+        if(confirmarSenha != senha) {
+            ipt_confirmacaoSenha.style.background = "#D91A2A"
+            label_confirmacaoSenha.style.color = "red"
+
+            label_senha.style.color = "red"
+            ipt_senha.style.background = "#D91A2A";
+
+
+
+            return(false)
+
+
+        } else {
+            ipt_confirmacaoSenha.style.background = "#97ED8A"
+            label_confirmacaoSenha.style.color = "green"
+
+            label_senha.style.color = "green"
+            ipt_senha.style.background = "#97ED8A";
+
+            return(true)
         }
 
 
@@ -118,7 +155,7 @@
         var sobrenomeVar = ipt_sobrenome.value;
         var emailVar = ipt_email.value;
         var senhaVar = ipt_senha.value;
-        var confirmacaoSenhaVar = ipt_confirmarSenha.value;
+        var confirmacaoSenhaVar = ipt_confirmacaoSenha.value;
 
         if (nomeVar == "" || sobrenomeVar == "" || emailVar == ""  || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
@@ -142,7 +179,8 @@
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
+                confirmacaoSenhaServer: confirmacaoSenhaVar
             })
         }).then(function (resposta) {
 

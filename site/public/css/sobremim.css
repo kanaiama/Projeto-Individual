@@ -182,4 +182,10 @@ a {
     width: 200px;
     border: 0cm;
     cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(107%);
 }
