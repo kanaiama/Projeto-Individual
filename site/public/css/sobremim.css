@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
 
 body {
-    background-color: #110D0B;
+    background-color: black;
 }
 
 *{
@@ -17,7 +17,7 @@ body {
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    background-color: #110D0B;
+    background-color: #0a0807;
     width: 100%;
     height: 10vh;
     padding-left: 50px;
