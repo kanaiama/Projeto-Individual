@@ -1,5 +1,13 @@
+/* BANNER GERAL */
+
+.banner_sb {
+    position: relative;
+    top: 0;
+
+}
 
 /* ICON POO + TEXT${POO} */
+
 .iconPoo {
     display: flex;
     justify-content: center;
@@ -18,8 +26,9 @@
 }
 
 
-/* BANNER CENTRAL POO*/
 
+
+/* BANNER CENTRAL POO*/
 
 .container_dw_poo {
     display: flex;
@@ -29,8 +38,13 @@
     height: 100vh;
     background-size: cover;
     background-image: url(../assets/imgs/sbPoo.jpg);
+    z-index: 4;
 }
 
+.banner_po_sb.zindex_sb {
+    opacity: 0;
+    z-index: 5;
+}
 
 .frase_dw_poo {
     display: flex;
@@ -38,7 +52,7 @@
     align-items: center;
     color: white;
     font-size: 30px;
-    text-align: center;
+    text-align: justify;
     width: 85%;
 }
 
@@ -51,6 +65,12 @@
     height: 65vh;
     margin-right: -80px;
 }
+
+
+
+
+
+
 
 /* BANNER SECUNDARIO POO*/
 
@@ -65,20 +85,57 @@
 .frase_poo_avancando {
     color: white;
     font-size: 30px;
-    text-align: center;
+    text-align: justify;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 80px;
 }
 
+
+
+
+
+
+
+
 /* BANNER CENTRAL - TAI LUNG */
+
+.fundo_tai {
+    background-color: #0B1225;
+    height: 100vh;
+}
+
+.container_tailung_sb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../assets/imgs/sbTailung_background.jpg);
+    z-index: 4;
+    transition: 1s ease-in-out;
+}
+
+.banner_tailung_sb.zindex_sb {
+    opacity: 0;
+    z-index: 5;
+}
+
+.iconTai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+
+
 
 
 
 /* Footer - Saiba Mais dos outros Personagens */
-
-
 
 .container_saiba_mais ul {
     margin-top: 80px;
