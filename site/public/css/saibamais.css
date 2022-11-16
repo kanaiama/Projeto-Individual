@@ -1,10 +1,14 @@
 
 /* BANNER CENTRAL POO*/
-.banner_sb {
-    width: 100%;
-    height: 80vh;
-    opacity: 1;
-    z-index: 4;
+
+.banner_po_sb {
+    position: absolute;
+    z-index: 5;
+}
+
+.banner_po_sb.zindex_sb {
+    opacity: 0;
+    z-index: 5;
 }
 
 .iconPoo {    
@@ -53,7 +57,6 @@
 
 .container_poo_avancando {
     display: flex;
-    justify-content: space-between;
     width: 90%;
     margin-top: 50px;
     margin-left: 50px;
@@ -74,11 +77,21 @@
 
 /* BANNER CENTRAL - TAI LUNG */
 
-
-
-
+.fundotai {
+    height: 180vh;
+    width: 100%;
+    background-color: #253257 ;
+}
 
 /* Footer - Saiba Mais dos outros Personagens */
+.footer {
+    z-index: 5;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+}
 
 .container_saiba_mais ul {
     margin-top: 80px;
