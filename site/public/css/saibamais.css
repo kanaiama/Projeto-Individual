@@ -77,16 +77,82 @@
 
 /* BANNER CENTRAL - TAI LUNG */
 
-.fundotai {
-    height: 180vh;
+.fundo_tai {
+    height: 220vh;
     width: 100%;
-    background-color: #253257 ;
+    background-color: #0B1225;
 }
+
+.banner_tailung_sb {
+    position: absolute;
+}
+
+.iconTai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.iconTai img {
+    height: 28vh;
+}
+
+.iconTai span {
+    font-size: 100px;
+    color: #3E09AF;
+}
+
+.container_tailung_shifu {
+    background-size: cover;
+    background-image: url(../assets/imgs/sbTaiLung.png);
+    height: 100vh;
+    width: 98.7vw;
+}
+
+.container_tailung_shifu img{
+    height: 34vh;
+    margin-right: 16px;
+}
+
+.container_frase_img_tai {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.frase_efeito_tai {
+    margin-left: 200px;
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+}
+
+.chama {
+    color: #12AAFF;
+}
+
+.frase_tai_shifu{
+    margin-right: 20px;
+    font-size: 35px;
+    color: white;
+    width: 40%;
+    text-align: justify;
+}
+
+/* BANNER SECUNDÁRIO - TAI LUNG */
+
+
+
+
+
 
 /* Footer - Saiba Mais dos outros Personagens */
 .footer {
     z-index: 5;
-    height: 200vh;
+    position: absolute;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
