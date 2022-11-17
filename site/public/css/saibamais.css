@@ -4,11 +4,14 @@
 .banner_po_sb {
     position: absolute;
     z-index: 5;
+    opacity: 0;
+    transition: 1s ease-in-out;
+
 }
 
 .banner_po_sb.zindex_sb {
-    opacity: 0;
-    z-index: 5;
+    z-index: 6;
+    opacity: 1;
 }
 
 .iconPoo {    
@@ -81,10 +84,21 @@
     height: 220vh;
     width: 100%;
     background-color: #0B1225;
+    z-index: 5;
+    opacity: 0;
 }
 
 .banner_tailung_sb {
     position: absolute;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.banner_tailung_sb.zindex_sb {
+    z-index: 7;
+    opacity: 1;
+    
 }
 
 .iconTai {
@@ -135,7 +149,7 @@
 
 .frase_tai_shifu{
     margin-right: 20px;
-    font-size: 35px;
+    font-size: 32px;
     color: white;
     width: 40%;
     text-align: justify;
@@ -150,7 +164,8 @@
 
 /* Footer - Saiba Mais dos outros Personagens */
 .footer {
-    z-index: 5;
+    z-index: 11;
+    opacity: 1;
     position: absolute;
     height: 80vh;
     display: flex;
@@ -184,6 +199,10 @@
     font-size: 40px;
 }
 
+.po_btn_icon {
+    height: 26vh;
+}
+
 .btn_kai_sb {
     background-color: #7D4B0F;
 }
@@ -194,4 +213,8 @@
 
 .btn_tai_sb {
     background-color: #446494;
+}
+
+.btn_po_sb {
+    background-color: #D09D1B;
 }

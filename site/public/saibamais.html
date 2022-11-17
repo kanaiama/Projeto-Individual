@@ -46,7 +46,7 @@
 
     <!-- BANNER PO -->
     <div class="banner_sb ">
-        <div class="banner_po_sb zindex_sb">
+        <div class="banner_po_sb zindex_sb" id="banner_po_sb">
             <div class="iconPoo">
                 <img src="assets/imgs/pooIcon 1.png">
                 <span>
@@ -75,7 +75,7 @@
 
        <!--  BANNER TAI LUNG --> 
         <div class="fundo_tai">
-            <div class="banner_tailung_sb">
+            <div class="banner_tailung_sb" id="banner_tailung_sb">
                 <div class="iconTai">
                     <img src="assets/imgs/iconTai.png" alt="">
                     <span>
@@ -101,40 +101,59 @@
             <!-- BANNER SECUNDÁRIO - TAI LUNG -->
             <div class=""></div>
         </div> 
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="container_saiba_mais">
+                <ul class="personagens">
+                    <li>
+                        <img src="assets/imgs/pooIcon 1.png" class="po_btn_icon">
+                    </li>
+                    <li>
+                        <img src="assets/imgs/iconTai.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/imgs/iconShen.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/imgs/iconKai.png" alt="">
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="container_botao_sb">
+                <ul>
+                    <li>
+                        <button class="btn_po_sb" onclick="btn_po()">SAIBA MAIS</button>
+                    </li>
+                    <li>
+                        <button class="btn_tai_sb" onclick="btn_tai()">SAIBA MAIS</button>
+                    </li>
+                    <li>
+                        <button class="btn_shen_sb">SAIBA MAIS</button>
+                    </li>
+                    <li>
+                        <button class="btn_kai_sb">SAIBA MAIS</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 
 
-    <!-- FOOTER -->
-    <div class="footer">
-        <div class="container_saiba_mais">
-            <ul class="personagens">
-                <li>
-                    <img src="assets/imgs/iconKai.png" alt="">
-                </li>
-                <li>
-                    <img src="assets/imgs/iconShen.png" alt="">
-                </li>
-                <li>
-                    <img src="assets/imgs/iconTai.png" alt="">
-                </li>
-            </ul>
-        </div>
-
-        <div class="container_botao_sb">
-            <ul>
-                <li>
-                    <button class="btn_kai_sb">SAIBA MAIS</button>
-                </li>
-                <li>
-                    <button class="btn_shen_sb">SAIBA MAIS</button>
-                </li>
-                <li>
-                    <button class="btn_tai_sb">SAIBA MAIS</button>
-                </li>
-            </ul>
-        </div>
-    </div>
 
 </body>
 </html>
+<script>
+        
+    function btn_po () {
+        banner_po_sb.classList.add('zindex_sb')
+        banner_tailung_sb.classList.remove('zindex_sb')
+    }
+
+    function btn_tai () {
+        banner_tailung_sb.classList.add('zindex_sb')
+        banner_po_sb.classList.remove('zindex_sb')
+    }
+
+</script>
