@@ -81,7 +81,7 @@
 /* BANNER CENTRAL - TAI LUNG */
 
 .fundo_tai {
-    height: 220vh;
+    height: 200vh;
     width: 100%;
     background-color: #0B1225;
     z-index: 5;
@@ -91,11 +91,11 @@
 .banner_tailung_sb {
     position: absolute;
     z-index: 5;
-    opacity: 0;
+    opacity: 1;
     transition: 1s ease-in-out;
 }
 
-.banner_tailung_sb.zindex_sb {
+.fundo_tai.zindex_sb {
     z-index: 7;
     opacity: 1;
     
@@ -157,7 +157,13 @@
 
 /* BANNER SECUNDÁRIO - TAI LUNG */
 
-
+.frase_gif_tai img {
+    position: absolute;
+    height: 67vh;
+    width: 60vw;
+    top: 900px;
+    right: 2px;
+}
 
 
 
@@ -171,6 +177,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: -200px;
   
 }
 

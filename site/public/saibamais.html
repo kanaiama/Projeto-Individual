@@ -74,8 +74,8 @@
         </div>
 
        <!--  BANNER TAI LUNG --> 
-        <div class="fundo_tai">
-            <div class="banner_tailung_sb" id="banner_tailung_sb">
+        <div id="banner_tai" class="fundo_tai">
+            <div class="banner_tailung_sb">
                 <div class="iconTai">
                     <img src="assets/imgs/iconTai.png" alt="">
                     <span>
@@ -99,7 +99,12 @@
             </div>
 
             <!-- BANNER SECUNDÁRIO - TAI LUNG -->
-            <div class=""></div>
+            <div class="banner_tai_2">
+                <div class="frase_gif_tai">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vero impedit incidunt mollitia laborum adipisci quo ipsum consequatur iste explicabo reiciendis atque nisi, quam veritatis fuga facilis magnam eligendi dolor!</span>
+                    <img src="https://i.imgur.com/mtdHZTD.gif" alt="">
+                </div>
+            </div>
         </div> 
         <!-- FOOTER -->
         <div class="footer">
@@ -148,11 +153,11 @@
         
     function btn_po () {
         banner_po_sb.classList.add('zindex_sb')
-        banner_tailung_sb.classList.remove('zindex_sb')
+        banner_tai.classList.remove('zindex_sb')
     }
 
     function btn_tai () {
-        banner_tailung_sb.classList.add('zindex_sb')
+        banner_tai.classList.add('zindex_sb')
         banner_po_sb.classList.remove('zindex_sb')
     }
 
