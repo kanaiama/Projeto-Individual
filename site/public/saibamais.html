@@ -106,6 +106,27 @@
                 </div>
             </div>
         </div> 
+
+        <!-- BANNER CENTRAL - LORD SHEN -->
+        <div class="fundo_shen" id="banner_lordshen">
+            <div class="banner_lordshen_sb">
+                <div class="iconShen">
+                    <img src="assets/imgs/iconShen.png" alt="">
+                    <span>
+                        LORD <b>SHEN</b>
+                    </span>
+                </div>
+
+                <div class="container_lord_shen_sb">
+                    <div class="frase_container_lord_shen">
+                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt natus vel suscipit dolorem sit facilis culpa dignissimos ea distinctio. Impedit dolore quas voluptatem nemo eaque facere. Repellat officia quia quas?</span>
+
+                    </div>
+                </div>
+            </div>
+            .
+
+        </div>
         <!-- FOOTER -->
         <div class="footer">
             <div class="container_saiba_mais">
@@ -134,7 +155,7 @@
                         <a href="#header"><button class="btn_tai_sb" onclick="btn_tai()">SAIBA MAIS</button></a>
                     </li>
                     <li>
-                        <button class="btn_shen_sb">SAIBA MAIS</button>
+                        <a href="#header"><button class="btn_shen_sb" onclick="btn_shen()">SAIBA MAIS</button></a>
                     </li>
                     <li>
                         <button class="btn_kai_sb">SAIBA MAIS</button>
@@ -154,11 +175,18 @@
     function btn_po () {
         banner_po_sb.classList.add('zindex_sb')
         banner_tai.classList.remove('zindex_sb')
+        banner_lordshen.classList.remove('zindex_sb')
     }
 
     function btn_tai () {
         banner_tai.classList.add('zindex_sb')
         banner_po_sb.classList.remove('zindex_sb')
+        banner_lordshen.classList.remove('zindex_sb')
     }
 
+    function btn_shen () {
+        banner_lordshen.classList.add('zindex_sb')
+        banner_po_sb.classList.remove('zindex_sb')
+        banner_tai.classList.remove('zindex_sb')
+    }
 </script>

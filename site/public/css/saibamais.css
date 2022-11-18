@@ -185,6 +185,62 @@ html {
 
 
 
+/* BANNER LORD SHEN */
+.fundo_shen {
+    height: 200vh;
+    width: 100%;
+    background-color: #210000;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    /*  position: absolute; 
+    top: 10vh; */
+}
+
+.fundo_shen.zindex_sb {
+    z-index: 7;
+    opacity: 1;   
+}
+
+.banner_lordshen_sb {
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.container_lord_shen_sb {
+    background-image: url();
+
+}
+
+.iconShen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.iconShen img {
+    height: 28vh;
+}
+
+.iconShen span {
+    font-size: 100px;
+    color: #f1f1f1;
+}
+
+.iconShen b {
+    color: #FF0000;
+}
+
+
+
+
+
+
+
+
 
 /* Footer - Saiba Mais dos outros Personagens */
 .footer {
