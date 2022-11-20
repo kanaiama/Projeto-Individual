@@ -290,6 +290,105 @@ html {
 
 /* BANNER CENTRAL - KAI */
 
+.fundo_kai {
+    height: 200vh;
+    width: 100%;
+    background-color: #132C27;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    position: absolute; 
+    top: 10vh;  
+    display: flex;
+}
+
+.fundo_kai.zindex_sb {
+    z-index: 7;
+    opacity: 1; 
+}
+
+.iconKai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 100px;
+    height: 30vh;
+    color: #1FC51C;
+}
+
+
+.iconKai img {
+    height: 28vh;
+}
+
+.banner_kai_sb {
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.container_kai_sb {
+    display: flex;
+    align-items: center;
+    width: 98.7vw;
+    height: 90vh;
+    background-image: url(../assets/imgs/kai_sb.png);
+    background-size: cover;
+
+}
+
+.frase_kai_sb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    margin-right: 3px;
+}
+
+.frase_kai_sb img {
+    height: 55vh;
+}
+
+.frase_kai_sb span {
+    width: 40%;
+    text-align: justify;
+    color: white;
+    font-size: 32px;
+}
+
+/* BANNER SECUNDÁRIO - KAI */
+
+.kai_gif_sb img{
+    position: absolute;
+    top: 820px;
+    height: 70vh;
+    width: 45vw;
+    border-radius: 247.5px
+}
+
+.polygon_kai_sb {
+    position: absolute;
+    top: 780px;
+    height: 80vh;
+    left: 140px;
+    background-image: url(../assets/imgs/poligono_kai.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.polygon_frase_kai span {
+    font-size: 32px;
+    color: white;
+}
+
+
+
+
+
+
 
 
 
