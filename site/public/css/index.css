@@ -1,0 +1,20 @@
+/* .header {
+    background-image: url(../assets/imgs/fundoFrase.png);
+    background-size: cover;
+} */
+
+.banner_index {
+    background-image: url(../assets/imgs/fundoFrase.png);
+    background-size: cover;
+    height: 70vh;
+}
+
+.frases_oogway {
+    color: #C8F5FF;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    width: 45vw;
+    margin-left: 90px;
+}
