@@ -375,12 +375,12 @@ html {
     left: 140px;
     background-image: url(../assets/imgs/poligono_kai.png);
     background-size: cover;
-    display: flex;
-    align-items: center;
 }
-
-.polygon_frase_kai span {
+.polygon_frase_kai {
     font-size: 32px;
+    width: 40%;
+    margin-top: 140px;
+    margin-left: 600px;
     color: white;
 }
 
