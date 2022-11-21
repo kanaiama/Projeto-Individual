@@ -10,7 +10,10 @@
 
     <script src="./js/funcoes.js"></script>
 
-
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sobremim.css">
     <link
@@ -47,6 +50,7 @@
             </div>
       </div>
 
+    <!-- BANNER OOGWAY -->  
     <div class="banner_index">
         <div class="frases_oogway">
             <span>
@@ -55,6 +59,81 @@
         </div>
     </div>
 
-</body>
 
+    <!-- BANNER CARROSSEL -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="titulo">
+                    <h2>PO</h2>
+                </div>
+                <div class="banner-po">
+                    <div class="swiper-conteudo">
+                        <img src="assets/imgs/img_carrossel/poo.png"class="img_icon">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam quas praesentium illo omnis, beatae aliquid quo? Corrupti ducimus necessitatibus aspernatur, qui culpa consequuntur, nisi, aliquid tempore numquam commodi [...]</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="titulo">
+                    <h2>TAI LUNG</h2>
+                </div>
+                <div class="banner-tai">
+                    <div class="swiper-conteudo">
+                        <img src="assets/imgs/img_carrossel/tailung.png" class="img_icon">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta voluptas quidem reprehenderit ipsam accusantium, eaque dolor nisi, id corrupti ipsa eveniet labore voluptatum in vero reiciendis facere et tempore perferendis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="titulo">
+                    <h2>LORD SHEN</h2>
+                </div>
+                <div class="banner-shen">
+                    <div class="swiper-conteudo">
+                        <img src="assets/imgs/img_carrossel/lordshen.png" class="img_icon">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis officia vero animi rerum reprehenderit doloribus ducimus, itaque quam asperiores. Porro dolore corporis velit soluta minima optio totam excepturi reiciendis eius.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="titulo">
+                    <h2>KAI</h2>
+                </div>
+                <div class="banner-kai">
+                    <div class="swiper-conteudo">
+                        <img src="assets/imgs/img_carrossel/kai.png" class="img_icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         
+        <!-- SETAS LATERAIS -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Configurando ambiente para o Swiper -->
+    <script src=
+        "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+    </script>
+
+</body>
 </html>
+
+<script>
+    var swiper = new Swiper (".swiper", {
+        cssMode: true,
+        loop: true, // looping
+        navigation: { // Navegação entre os banners do Carrossel
+            nextEl: ".swiper-button-next", // Seta Direita - próximo
+            prevEl: ".swiper-button-prev", // Seta Esquerda - voltar
+        },
+        keyboard: true, // Passar slide pelas setinhas ou teclado
+    });
+</script>
+
