@@ -145,6 +145,14 @@
     margin-left: 80px;
 }
 
+.banner-shen .continuidade {
+    margin-left: 40px;
+}
+
+.banner-shen img {
+    margin-right: -150px;
+}
+
 
    /* CARROSSEL - KAI */
 
@@ -177,6 +185,10 @@
     height: 80vh;
     width: 60vw;
     margin-left: 80px;
+}
+
+.banner-kai img {
+    margin-right: -150px;
 }
 
 /* BOTÃO SAIBA MAIS NO BANNER DO CARROSSEL */

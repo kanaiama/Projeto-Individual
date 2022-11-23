@@ -55,32 +55,37 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="banner2" id="banner2" >
             <div class="container">
                 <div class="tituloFrase">
-                    <p class="topico">RELAÇÃO CRIADOR E KUNG FU PANDA</p>
-                    <p class="frase">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ducimus quaerat necessitatibus delectus consectetur modi illo atque rem molestias voluptatem doloremque consequatur debitis repellendus nesciunt fugit earum, dolores ex tempore. lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta quaerat quas ut harum blanditiis! Nam commodi, dolorum asperiores nostrum inventore omnis dicta nemo nobis amet similique itaque consequatur fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quidem reiciendis recusandae dolores sed ex enim odit dicta iure. Ipsum delectus suscipit tempora, dignissimos facilis error? Vero repudiandae nam velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam, ex rem dolorum aut reprehenderit laboriosam fuga animi eveniet voluptatem! Suscipit nihil est similique, aspernatur dolorum rerum et aliquam iusto.</p>
+                    <p class="topico-b2">RELAÇÃO CRIADOR E KUNG FU PANDA</p>
+                    <p class="frase-b2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ducimus quaerat necessitatibus delectus consectetur modi illo atque rem molestias voluptatem doloremque consequatur debitis repellendus nesciunt fugit earum, dolores ex tempore. lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta quaerat quas ut harum blanditiis! Nam commodi, dolorum asperiores nostrum inventore omnis dicta nemo nobis amet similique itaque consequatur fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quidem reiciendis recusandae dolores sed ex enim odit dicta iure. Ipsum delectus suscipit tempora, dignissimos facilis error? Vero repudiandae nam velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam, ex rem dolorum aut reprehenderit laboriosam fuga animi eveniet voluptatem! Suscipit nihil est similique, aspernatur dolorum rerum et aliquam iusto.</p>
                 </div>
             </div>
         </div>
-
+        
         <div class="banner3" id="banner3">
             <div class="container">
-                <ul>
-                    <li>
-
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-                        
-                    </li>
-                </ul>
+                <div class="tituloFrase">
+                    <p class="topico">VALORES</p>
+                </div>
+                <div class="img-valor">
+                    <ul>
+                        <li>
+                            <img src="assets/imgs/img-valores/liberdade.png" alt=""> <span>LIBERDADE</span>
+                        </li>
+                        <li>
+                            <img src="assets/imgs/img-valores/respeito.png" alt=""> <span>RESPEITO</span>
+                        </li>
+                        <li>
+                            <img src="assets/imgs/img-valores/forca-de-vontade.png" alt=""> <span>DISCIPLINA</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
+        </div> 
+        
         <div class="container_botao">
             <div class="botoes">
                 <button onclick="primeiroBTN()" class="btn">
@@ -108,17 +113,20 @@
 
 <script>
     function primeiroBTN () {
-        banner2.classList.remove('zindex')
         banner1.classList.add('zindex')
+        banner2.classList.remove('zindex')
+        banner3.classList.remove('zindex')
     }
 
     function segundoBTN () {
-        banner1.classList.remove('zindex')
         banner2.classList.add('zindex')
+        banner1.classList.remove('zindex')
+        banner3.classList.remove('zindex')
     }
 
     function terceiroBTN () {
-        div1.classList.remove('zindex')
-        div2.classList.add('zindex')
+        banner3.classList.add('zindex')
+        banner1.classList.remove('zindex')
+        banner2.classList.remove('zindex')
     }
 </script>
