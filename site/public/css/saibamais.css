@@ -1,0 +1,452 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BANNER CENTRAL POO*/
+
+.banner_po_sb {
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s ease-in-out;
+
+}
+
+.banner_po_sb.zindex_sb {
+    z-index: 6;
+    opacity: 1;
+}
+
+.iconPoo {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.iconPoo span {
+    color: #D09D1B;
+    font-size: 100px;
+}
+
+.container_dw_poo {
+    background-size: cover;
+    background-image: url(../assets/imgs/sbPoo.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase_dw_poo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    width: 80%;
+}
+
+.frase_dw_poo span {
+    margin-left: -30px;
+    margin-right: 50px;
+}
+
+.frase_dw_poo img {
+    height: 65vh;
+    margin-right: -80px;
+}
+
+
+/* BANNER SECUNDARIO POO*/
+
+.container_poo_avancando {
+    display: flex;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.frase_poo_avancando {
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+
+
+
+
+/* BANNER CENTRAL - TAI LUNG */
+
+.fundo_tai {
+    height: 200vh;
+    width: 100%;
+    background-color: #0B1225;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.banner_tailung_sb {
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.fundo_tai.zindex_sb {
+    z-index: 7;
+    opacity: 1;
+    
+}
+
+.iconTai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    gap: 30px;
+}
+
+.iconTai img {
+    height: 28vh;
+}
+
+.iconTai span {
+    font-size: 100px;
+    color: #3E09AF;
+}
+
+.container_tailung_shifu {
+    background-size: cover;
+    background-image: url(../assets/imgs/sbTaiLung.png);
+    height: 100vh;
+    width: 98.7vw;
+}
+
+.container_tailung_shifu img{
+    height: 34vh;
+    margin-right: 16px;
+}
+
+.container_frase_img_tai {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.frase_efeito_tai {
+    margin-left: 200px;
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+}
+
+.chama {
+    color: #12AAFF;
+}
+
+.frase_tai_shifu{
+    margin-right: 20px;
+    font-size: 32px;
+    color: white;
+    width: 40%;
+    text-align: justify;
+}
+
+/* BANNER SECUNDÁRIO - TAI LUNG */
+
+.frase_gif_tai span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 140px;
+    height: 197vh;
+    width: 20%;
+    font-size: 30px;
+    color: white;
+    text-align: justify;
+}
+
+.frase_gif_tai img {
+    position: absolute;
+    height: 70vh;
+    width: 60vw;
+    top: 908px;
+    right: 1px;
+    border-radius: 200px 0 0 200px;
+}
+
+
+
+/* BANNER LORD SHEN */
+.fundo_shen {
+    height: 200vh;
+    width: 100%;
+    background-color: #210000;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    position: absolute; 
+    top: 10vh; 
+}
+
+.fundo_shen.zindex_sb {
+    z-index: 7;
+    opacity: 1;   
+}
+
+.banner_lordshen_sb {
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.container_lord_shen_sb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 98.7vw;
+    height: 90vh;
+    background-image: url(../assets/imgs/sbLordShen.png);
+    background-size: cover;
+
+}
+
+.frase_container_lord_shen {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    text-align: justify;
+    color: white;
+    font-size: 32px;
+    width: 60%;
+    margin-right: 60px;
+}
+
+.iconShen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    gap: 30px;
+}
+
+.iconShen img {
+    height: 28vh;
+}
+
+.iconShen span {
+    font-size: 100px;
+    color: #f1f1f1;
+}
+
+.iconShen b {
+    color: #FF0000;
+}
+
+
+
+/* BANNER SECUNDÁRIO - LORD SHEN */
+
+.shen_assustado {
+    position: absolute;
+    top: 880px;
+    left: 750px;
+    height: 50vh;
+}
+
+.banner_lordshen_sb_2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 1245px;
+    height: 440px;
+    left: -300px;
+    top: 800px;
+    background: #341212;
+    opacity: 0.7;
+    border-radius: 220px;
+
+}
+.frase_lord_shen_banner2 {
+    font-size: 32px;
+    text-align: justify;
+    margin-left: 330px;
+    width: 65vw;
+    color: white;
+}
+
+
+
+
+/* BANNER CENTRAL - KAI */
+
+.fundo_kai {
+    height: 200vh;
+    width: 100%;
+    background-color: #132C27;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    position: absolute; 
+    top: 10vh;  
+    display: flex;
+}
+
+.fundo_kai.zindex_sb {
+    z-index: 7;
+    opacity: 1; 
+}
+
+.iconKai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 100px;
+    height: 30vh;
+    color: #1FC51C;
+}
+
+
+.iconKai img {
+    height: 28vh;
+}
+
+.banner_kai_sb {
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.container_kai_sb {
+    display: flex;
+    align-items: center;
+    width: 98.7vw;
+    height: 90vh;
+    background-image: url(../assets/imgs/kai_sb.png);
+    background-size: cover;
+
+}
+
+.frase_kai_sb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    margin-right: 3px;
+}
+
+.frase_kai_sb img {
+    height: 55vh;
+}
+
+.frase_kai_sb span {
+    width: 40%;
+    text-align: justify;
+    color: white;
+    font-size: 32px;
+}
+
+/* BANNER SECUNDÁRIO - KAI */
+
+.kai_gif_sb img{
+    position: absolute;
+    top: 820px;
+    height: 70vh;
+    width: 45vw;
+    border-radius: 247.5px
+}
+
+.polygon_kai_sb {
+    position: absolute;
+    top: 780px;
+    height: 80vh;
+    left: 140px;
+    background-image: url(../assets/imgs/poligono_kai.png);
+    background-size: cover;
+}
+.polygon_frase_kai {
+    font-size: 32px;
+    width: 40%;
+    margin-top: 140px;
+    margin-left: 600px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer - Saiba Mais dos outros Personagens */
+.footer {
+    z-index: 11;
+    opacity: 1;
+    position: absolute;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: -200px;
+  
+}
+
+.container_saiba_mais ul {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw
+}
+
+.container_botao_sb ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_botao_sb button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 15vw;
+    height: 9vh;
+    border-radius: 6px;
+    font-size: 40px;
+}
+
+.po_btn_icon {
+    height: 26vh;
+}
+
+.btn_kai_sb {
+    background-color: #7D4B0F;
+}
+
+.btn_shen_sb {
+    background-color: #A5A5A5;
+}
+
+.btn_tai_sb {
+    background-color: #446494;
+}
+
+.btn_po_sb {
+    background-color: #D09D1B;
+}

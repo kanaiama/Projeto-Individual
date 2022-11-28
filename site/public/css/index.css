@@ -1,0 +1,246 @@
+/* .header {
+    background-image: url(../assets/imgs/fundoFrase.png);
+    background-size: cover;
+} */
+
+/* BANNER FRASE OOGWAY */
+
+.banner_index {
+    background-image: url(../assets/imgs/fundoFrase.png);
+    background-size: cover;
+    height: 70vh;
+}
+
+.frases_oogway {
+    color: #C8F5FF;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    width: 45vw;
+    margin-left: 90px;
+}
+
+/* BANNER CARROSSEL */
+
+    /* CARROSSEL - PO  */
+.titulo-po {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    width: 28vw;
+    height: 12vh;
+    background-color: #D09D1B;
+    
+}
+
+.titulo-po h2{
+    font-size: 128px;
+    color: rgb(243, 243, 243);
+}
+
+.banner-po {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #50260E;
+    border-radius: 62px;
+    height: 80vh;
+    width: 60vw;
+    margin-left: 80px;
+}
+
+.swiper-conteudo {
+    font-size: 40px;
+    color: white;
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.continuidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-personagem {
+    margin-right: -300px;
+}
+
+    /* CARROSSEL - TAI LUNG  */
+
+.titulo-tai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    width: 28vw;
+    height: 12vh;
+    background-color: #401860;
+}
+
+.titulo-tai h2{
+    font-size: 128px;
+    color: white;
+
+}
+
+.titulo-tai span {
+    color: #7D3DE5;
+}
+
+.banner-tai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202552;
+    border-radius: 62px;
+    height: 80vh;
+    width: 60vw;
+    margin-left: 80px;
+}
+
+
+    /* CARROSSEL - LORD SHEN */
+
+
+.titulo-shen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    width: 28vw;
+    height: 12vh;
+    background-color: #695F5F;
+}
+
+.titulo-shen h2{
+    font-size: 128px;
+    color: white;
+
+}
+
+.titulo-shen span {
+    color: #b11b1b;
+}
+
+.banner-shen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #750d0d;
+    border-radius: 62px;
+    height: 80vh;
+    width: 60vw;
+    margin-left: 80px;
+}
+
+.banner-shen .continuidade {
+    margin-left: 40px;
+}
+
+.banner-shen img {
+    margin-right: -150px;
+}
+
+
+   /* CARROSSEL - KAI */
+
+
+   .titulo-kai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    width: 28vw;
+    height: 12vh;
+    background-color: #7D4B0F;
+}
+
+.titulo-kai h2{
+    font-size: 128px;
+    color: #2aac16;
+
+}
+
+.banner-kai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #11210E;
+    border-radius: 62px;
+    height: 80vh;
+    width: 60vw;
+    margin-left: 80px;
+}
+
+.banner-kai img {
+    margin-right: -150px;
+}
+
+/* BOTÃO SAIBA MAIS NO BANNER DO CARROSSEL */
+
+.btn_idx_sb_po{
+    margin-top: -70px;
+    margin-left: 335px;
+    width: 15vw;
+    height: 9vh;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C51414;
+    color: white;
+}
+
+.btn_idx_sb_tai {
+    margin-top: -70px;
+    margin-left: 335px;
+    width: 15vw;
+    height: 9vh;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #446494;
+    color: white;
+}
+
+.btn_idx_sb_shen {
+    margin-top: -70px;
+    margin-left: 335px;
+    width: 15vw;
+    height: 9vh;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A5A5A5;
+    color: white;
+}
+
+.btn_idx_sb_kai {
+    margin-top: -70px;
+    margin-left: 335px;
+    width: 15vw;
+    height: 9vh;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7D4B0F;
+    color: white;
+}

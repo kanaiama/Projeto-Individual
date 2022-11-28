@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>POONDA!| Cadastro</title>
-
+    
     <script src="./js/funcoes.js"></script>
-
+    
     <link rel="stylesheet" href="css/cadastro.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap"
@@ -20,16 +20,22 @@
 
     <!-- <img src="assets/imgs/backgroundCadastroLogin.jpg" alt="" class="background_cadastro"> -->
 
-    <!-- LOGO E TITULO-->
-
-    <div class="logo">
-        <img src="assets/imgs/logoYinYang.png" alt="">
-        <p>Poonda!</p>
-    </div>
-
+    
+    
     <!-- TUDO -->
     <div class="all">
+        <!-- LOGO E TITULO-->
+        <div class="logo"><a href="">
+            <img src="assets/imgs/logoYinYang.png" alt="">
+                <a href="index.html"><p>
+                    Poonda!
+                </p>
+            </a>
+        </div>
+
+        
             <!-- FORMULÁRIO DE INFORMAÇÕES -->
+
             <div class="caixa-formulario">
         
             <div class="container">
@@ -51,21 +57,16 @@
                     <label for="ipt_email">E-mail</label>
                     <input type="text" id="ipt_email">
                 </div>
-
-                <div class="campo">
-                    <label for="ipt_confirmarEmail">Confirmar E-mail</label>
-                    <input type="email" id="ipt_confirmarEmail">
-                </div>
-
+                
                 <div class="campo_senha">
                     <div class="campo2">
-                        <label for="ipt_senha">Senha</label>
-                        <input type="password" id="ipt_senha">
+                        <label for="ipt_senha" id="label_senha">Senha</label>
+                        <input type="password" id="ipt_senha" onkeyup="senha()">
                     </div>
 
                     <div class="campo2">
-                        <label for="ipt_confirmacaoSenha">Confirmar Senha</label>
-                        <input type="password" id="ipt_confirmacaoSenha">
+                        <label for="ipt_confirmacaoSenha" id="label_confirmacaoSenha">Confirmar Senha</label>
+                        <input type="password" id="ipt_confirmacaoSenha" onkeyup="confirmar_senha()">
                     </div>
                 </div>
                 
@@ -81,6 +82,72 @@
 </html>
 
 <script>
+
+    function senha () {
+        var senha = ipt_senha.value
+        var confirmarSenha = ipt_confirmacaoSenha.value
+
+
+
+        if(confirmarSenha != senha) {
+            ipt_confirmacaoSenha.style.background = "#D91A2A"
+            label_confirmacaoSenha.style.color = "red"
+
+            label_senha.style.color = "red"
+            ipt_senha.style.background = "#D91A2A";
+
+
+
+            return(false)
+
+
+        } else {
+            ipt_confirmacaoSenha.style.background = "#97ED8A"
+            label_confirmacaoSenha.style.color = "green"
+
+            label_senha.style.color = "green"
+            ipt_senha.style.background = "#97ED8A";
+
+            return(true)
+        }
+
+
+
+    }
+    // Confirmação de senha
+    function confirmar_senha (){
+        var senha = ipt_senha.value
+        var confirmarSenha = ipt_confirmacaoSenha.value
+
+
+
+        if(confirmarSenha != senha) {
+            ipt_confirmacaoSenha.style.background = "#D91A2A"
+            label_confirmacaoSenha.style.color = "red"
+
+            label_senha.style.color = "red"
+            ipt_senha.style.background = "#D91A2A";
+
+
+
+            return(false)
+
+
+        } else {
+            ipt_confirmacaoSenha.style.background = "#97ED8A"
+            label_confirmacaoSenha.style.color = "green"
+
+            label_senha.style.color = "green"
+            ipt_senha.style.background = "#97ED8A";
+
+            return(true)
+        }
+
+
+
+    }
+
+
     function cadastrar() {
         aguardar();
 
@@ -89,11 +156,10 @@
         var nomeVar = ipt_nome.value;
         var sobrenomeVar = ipt_sobrenome.value;
         var emailVar = ipt_email.value;
-        var confirmarEmailVar = ipt_confirmarEmail.value;
         var senhaVar = ipt_senha.value;
-        var confirmacaoSenhaVar = ipt_confirmarSenha.value;
+        var confirmacaoSenhaVar = ipt_confirmacaoSenha.value;
 
-        if (nomeVar == "" || sobrenomeVar == "" || emailVar == ""  || confirmarEmail == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || sobrenomeVar == "" || emailVar == ""  || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Insira todos os campos para prosseguir!";
 
@@ -115,7 +181,8 @@
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
+                confirmacaoSenhaServer: confirmacaoSenhaVar
             })
         }).then(function (resposta) {
 

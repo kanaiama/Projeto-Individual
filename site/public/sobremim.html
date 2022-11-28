@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Poonda! | Sobre o criador</title>
+    <title>Poonda! Sobre o criador</title>
 
     <script src="./js/funcoes.js"></script>
 
@@ -22,14 +22,17 @@
     <div class="header">
         <div class="logo">
             <img src="assets/imgs/logoYinYang.png">
-            <p>
+            <a href="index.html"><p>
                 Poonda!
-            </p>
+            </p></a>
         </div>
             <div class="container">
                 <ul class="navbar">
                     <li>
-                        <a href="">Quiz</a>
+                        <a href="sobremim.html">Sobre o Criador</a>
+                    </li>
+                    <li>
+                        <a href="quiz.html">Quiz</a>
                     </li>
                     <li>
                         <a href="login.html">Login</a>
@@ -48,31 +51,56 @@
             <div class="container">
                 <div class="tituloFrase">
                     <p class="topico">QUEM É WILSON?</p>
-                    <p class="frase">lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur porro illo veniam, nihil consequatur tenetur laborum doloribus error, quos atque tempora sed quasi sit corporis omnis odit magni modi. Voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem commodi aliquid beatae dolorum sapiente</p>
+                    <p class="frase">
+                        Nascido no Pará, Wilson Kanaiama Junior é um jovem garoto de 19 anos e estudante na melhor faculdade de tecnologia chamada SPTech! Apesar de muitas dúvidas, Wilson continua seguindo em frente mesmo quando está difícil e dando o seu melhor para aprender coisas novas e melhorar cada vez mais como pessoa e profissional!
+                    </p>
                 </div>
             </div>
         </div>
-
-        <div class="banner2 zindex" id="banner2" >
+        
+        <div class="banner2" id="banner2" >
             <div class="container">
                 <div class="tituloFrase">
-                    <p class="topico">RELAÇÃO CRIADOR E KUNG FU PANDA</p>
-                    <p class="frase">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ducimus quaerat necessitatibus delectus consectetur modi illo atque rem molestias voluptatem doloremque consequatur debitis repellendus nesciunt fugit earum, dolores ex tempore. lorem  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta quaerat quas ut harum blanditiis! Nam commodi, dolorum asperiores nostrum inventore omnis dicta nemo nobis amet similique itaque consequatur fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quidem reiciendis recusandae dolores sed ex enim odit dicta iure. Ipsum delectus suscipit tempora, dignissimos facilis error? Vero repudiandae nam velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam, ex rem dolorum aut reprehenderit laboriosam fuga animi eveniet voluptatem! Suscipit nihil est similique, aspernatur dolorum rerum et aliquam iusto.</p>
+                    <p class="topico-b2">RELAÇÃO CRIADOR E KUNG FU PANDA</p>
+                    <p class="frase-b2">
+                        "Quando eu era criança e assistia Kung fu Panda, eu apenas me divirtia um pouco vendo os filmes, porém, sendo um adulto agora e pesquisando mais a fundo, pude perceber todo a profundidade que o filme tem. Nos três filmes podemos acompanhar o panda Po em uma jornada para descobrir mais sobre si mesmo e sua aceitação com o passado. Po inicialmente é preguiçoso, com dúvidas sobre o que quer se tornar e mimado pelo seu pai adotivo. Dito isso, já comecei a me identificar pelo personagem, principalmente por toda a confusão que ele sente e por ele sempre estar se rebaixando mesmo quando consegue seguir o que ele queria ser (Artista Marcial) e é justamente o que eu sinto, passei grande parte da minha vida sem saber o que eu desejava me tornar e mesmo agora decidido, eu ainda continuo me rebaixando. Há uma analogia interessante no primeiro filme que é marcante para mim onde há um pergaminho que supostamente quem o ler vai se tornar um grande guerreiro e, quando o Po abre o pergaminho, ele vê apenas o pergaminho vazio, com o reflexo de si mesmo. Às vezes passamos uma vida esperando que algo aconteça, seja lá o que for. Algo que irá mudar tudo, que irá transformar nossa vida e torná-la especial. O problema é insistir em acreditar que algum evento externo irá proporcionar isso, esquecendo de que somos os verdadeiros responsáveis por nossas escolhas e o caminho que decidimos seguir. São os nossos pensamentos, o nosso comportamento e principalmente as nossas atitudes que irão definir nossos resultados, que irão definir nós.  Nada tornará a nossa vida especial, a menos que decidimos que ela será especial."
+                    </p>
                 </div>
             </div>
         </div>
-
+        
+        <div class="banner3" id="banner3">
+            <div class="container">
+                <div class="tituloFrase">
+                    <p class="topico">VALORES QUE O CRIADOR PREZA</p>
+                </div>
+                <div class="img-valor">
+                    <ul>
+                        <li>
+                            <img src="assets/imgs/img-valores/liberdade.png" alt=""> <span>LIBERDADE</span>
+                        </li>
+                        <li>
+                            <img src="assets/imgs/img-valores/respeito.png" alt=""> <span>RESPEITO</span>
+                        </li>
+                        <li>
+                            <img src="assets/imgs/img-valores/forca-de-vontade.png" alt=""> <span>DISCIPLINA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        
         <div class="container_botao">
-            <div class="botoes zindex">
-                <button onclick="primeiroBTN()" class="primeiro_botao">
+            <div class="botoes">
+                <button onclick="primeiroBTN()" class="btn">
                     QUEM É WILSON?
                 </button>
 
-                <button onclick="segundoBTN()" class="segundo_botao">
+                <button onclick="segundoBTN()" class="btn">
                     TEMA
                 </button>
 
-                <button onclick="terceiroBTN()" class="terceiro_botao">
+                <button onclick="terceiroBTN()" class="btn">
                     VALORES
                 </button>
             </div>
@@ -82,7 +110,6 @@
 
     </div>
 
-    <div class="zindex"></div>
 
 </body>
 
@@ -90,17 +117,20 @@
 
 <script>
     function primeiroBTN () {
-        banner2.classList.remove('zindex')
         banner1.classList.add('zindex')
+        banner2.classList.remove('zindex')
+        banner3.classList.remove('zindex')
     }
 
     function segundoBTN () {
-        banner1.classList.remove('zindex')
         banner2.classList.add('zindex')
+        banner1.classList.remove('zindex')
+        banner3.classList.remove('zindex')
     }
 
     function terceiroBTN () {
-        div1.classList.remove('zindex')
-        div2.classList.add('zindex')
+        banner3.classList.add('zindex')
+        banner1.classList.remove('zindex')
+        banner2.classList.remove('zindex')
     }
 </script>

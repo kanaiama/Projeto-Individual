@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
 
+body {
+    background-color: rgb(0, 0, 0);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,28 +17,36 @@
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    background-color: #110D0B;
+    background-color: #0a0807;
+    width: 100%;
+    height: 10vh;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .header .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 60px;
+
 }
 
 .logo {
-    margin-left: 25px;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .logo img {
-    height: 70px;
+    width: 4vw;
+    height: 4vw;
 }
 
 .logo p {
     color: #DAE2E7;
-    font-size: 60px;
+    font-size: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,12 +91,9 @@ a {
     opacity: 0;
     z-index: 4;
     transition: 1s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(../assets/imgs/backgroundSobreCriador1.png);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-size: cover;
 }
 .banner1.zindex {
@@ -92,21 +101,28 @@ a {
     z-index: 5;
 }
 
+.tituloFrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
+
 .topico {
     color: #e3a507;
     font-size: 60px;
     display: flex;
     justify-content: center;
-
+    margin-top: 80px;
 }
 
 .frase {
     display: flex;
     justify-content: center;
+    text-align: center;
     color: #F1F1F1;
     font-size: 30px;
-    display: flex;
-    text-align: center;
     width: 80vw;
 }
 
@@ -118,12 +134,9 @@ a {
     opacity: 0;
     z-index: 4;
     transition: 1s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(../assets/imgs/backgroundSobreCriador2.png);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-size: cover;
 }
 
@@ -132,18 +145,70 @@ a {
     z-index: 5;
 }
 
+.topico-b2 {
+    color: #e3a507;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
 
+.frase-b2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F1F1F1;
+    font-size: 30px;
+    width: 80vw;
+}
 
+/* VALORES */
+.banner3{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: 4;
+    transition: 1s ease-in-out;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: black
+}
+
+.banner3.zindex{
+    opacity: 1;
+    z-index: 5;
+}
+
+.img-valor ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -180px;
+}
+.img-valor img {
+    height: 45vh;
+    width: 20vw;
+}
+
+.img-valor span {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
 
 
 
 /* BOTOES */
 
 .container_botao {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
-    height: 100vh;
+    height: 90vh;
     padding: 120px;
 }
 
@@ -151,40 +216,28 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.botoes.zindex{
-    opacity: 1;
     z-index: 6;
+    position: absolute;
+    top: 490px;
+    gap: 80px;
+    left: 300px;
 }
 
 
-.primeiro_botao {
+.btn {
     text-decoration: none;
     color: black;
     background-color: #7B4141;
     font-weight: bold;
     padding: 6px;
     font-size: 2.0rem;
-    width: 15%;
+    width: 200px;
+    border: 0cm;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
 }
 
-.segundo_botao {
-    text-decoration: none;
-    color: black;
-    background-color: #7B4141;
-    font-weight: bold;
-    padding: 6px;
-    font-size: 2rem;
-    width: 15%;
-}
-
-.terceiro_botao {
-    text-decoration: none;
-    color: black;
-    background-color: #7B4141;
-    font-weight: bold;
-    padding: 6px;
-    font-size: 2em;
-    width: 15%;
+.btn:hover {
+    transform: scale(107%);
 }

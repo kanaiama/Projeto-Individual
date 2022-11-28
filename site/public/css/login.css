@@ -15,15 +15,14 @@
     height: 100vh;
     width: 100vw;
     background-size: cover;
+    flex-direction: column;
 }
 
 .logo {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 5px;
-    left: 530px;
+    margin-bottom: 5px;
 }
 .logo img {
     width: 80px;
@@ -31,8 +30,15 @@
 
 .logo p {
     color: #DAE2E7;
-    font-size: 90px;
+    font-size: 90px;    
     margin-left: 10px;
+    margin-top: 8px;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
  /* CAIXA DE FORMULÁRIO */
@@ -40,7 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 560px;
+    height: 500px;
     width: 500px;
     background-color: #D9D9D9;
     border-radius: 10px;
@@ -55,8 +61,8 @@
 .container p {
     width: 540px;
     height: 65px;
-    margin-left: 130px;
     margin-top: 20px;
+    margin-left: 130px;
     font-size: 5rem;
     margin-bottom: 40px;
 }
@@ -79,14 +85,16 @@
 .campo input {
     border-radius: 10px;
     background: #fbf9f3;
-    padding: 12px;
+    padding: 7px;
     width: 450px;
     outline: none;
     border: none;
+    font-size: 30px;
 }
 
 .campo label {
     margin-top: 10px;
+    margin-left: 5px;
     display: flex;
     align-self: flex-start;
 }
@@ -116,6 +124,7 @@
     font-size: 25px;
     display: flex;
     align-self: flex-end;
+    color: #0053af;
 }
 
 .btn_login {
@@ -123,8 +132,8 @@
     border: none;
     border-radius: 10px;
     width: 400px;
-    margin-top: 50px;
-    padding: 10px;
+    margin-top: 30px;
+    padding: 6px;
     font-size: 50px;
     background-color: #E00909;
     text-align: center;
@@ -136,8 +145,12 @@
 }
 
 .frase_criar_conta {
-    margin-top: 15px;
+    margin-top: 7px;
     font-size: 30px;
+}
+
+.frase_criar_conta a {
+   color: #0053af;
 }
 
 /* FIM DA CAIXA DE FORMULÁRIO */
