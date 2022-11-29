@@ -157,10 +157,10 @@
 }
 
 .botoes_q3 button {
-    width: 40vw;
-    height: 15vh;
+    width: 43vw;
+    height: 23vh;
     border-radius: 15px;
-    font-size: 35px;
+    font-size: 50px;
 }
 
 .btn_primeira_q3 {
@@ -178,4 +178,64 @@
     margin-left: 360px;
     background-color: #142023;
     color: #C5CBDB;
+}
+
+
+/* QUIZ 4 */
+
+.caixa_q4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.caixa_pergunta_q4 {
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    background-image: url(../assets/imgs/img-quiz/banner_quiz4.png);
+    background-size: cover;
+    width: 80vw;
+    height: 50vh;
+}
+
+.caixa_pergunta_q4 span {
+    color: #f1f1f1;
+    font-size: 80px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.botoes_q4 {
+    margin-top: 30px;
+}
+
+.botoes_q4 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.botoes_q4 button {
+    width: 80vw;
+    height: 13vh;
+    font-size: 60px;
+    color: #f1f1f1;
+}
+
+.btn_primeira_q4 {
+    background-color: #3E2916;
+}
+
+.btn_segunda_q4 {
+    background-color: #0D210F;
+}
+
+.btn_terceira_q4 {
+    background-color: #242409;
+}
+
+.btn_quarta_q4 {
+    background-color: #361515;
 }
