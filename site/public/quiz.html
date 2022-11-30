@@ -79,13 +79,13 @@
         <div class="caixa_resposta_q1">
             <ul>
                 <li>
-                    <img src="assets/imgs/img-icon/iconTai.png" onclick="btn_tai_quiz()">
+                    <img src="assets/imgs/img-icon/iconTai.png" onclick="quiz(1)">
                 </li>
                 <li>
-                    <img src="assets/imgs/img-icon/iconShen.png" onclick="btn_shen_quiz()">
+                    <img src="assets/imgs/img-icon/iconShen.png" onclick="quiz(2)">
                 </li>
                 <li>
-                    <img src="assets/imgs/img-icon/iconKai.png" onclick="btn_kai_quiz()">
+                    <img src="assets/imgs/img-icon/iconKai.png" onclick="quiz(3)">
                 </li>
             </ul>
         </div>
@@ -100,16 +100,16 @@
         <div class="botoes_q2">
             <ul>
                 <li>
-                    <button onclick="btn1_q2()" class="vinganca">Vingança</button>
+                    <button onclick="quiz(5)" class="vinganca">Vingança</button>
                 </li>
                 <li>
-                    <button onclick="btn2_q2()" class="destruicao">Destruição</button>
+                    <button onclick="quiz(7)" class="destruicao">Destruição</button>
                 </li>
                 <li>
-                    <button onclick="btn3_q2()" class="frustracao">Frustração</button>
+                    <button onclick="quiz(4)" class="frustracao">Frustração</button>
                 </li>
                 <li>
-                    <button onclick="btn4_q2()" class="inveja">Inveja</button>
+                    <button onclick="quiz(6)" class="inveja">Inveja</button>
                 </li>
             </ul>
         </div>
@@ -124,17 +124,17 @@
         <div class="botoes_q3">
             <ul>
                 <li>
-                    <button onclick="btn1_q3()" class="btn_primeira_q3">
+                    <button onclick="quiz(2)" class="btn_primeira_q3">
                         “Aquele que foge do seu destino acaba indo de encontro a ele…”
                     </button>
                 </li>
                 <li>
-                    <button onclick="btn2_q3()" class="btn_segunda_q3">
+                    <button onclick="quiz(3)" class="btn_segunda_q3">
                         “Quanto mais você toma, menos você tem”
                     </button>
                 </li>
             </ul>
-            <button onclick="btn3_q3()" class="btn_terceira_q3">
+            <button onclick="quiz(1)" class="btn_terceira_q3">
                 “Se o caminho que percorrerem leva vocês sempre de volta a si mesmos, então não irão a lugar algum.”
             </button>
         </div>
@@ -153,22 +153,22 @@
         <div class="botoes_q4">
             <ul>
                 <li>
-                    <button onclick="btn1_q4()" class="btn_primeira_q4">
+                    <button onclick="quiz(1)" class="btn_primeira_q4">
                         “Não aceito mudanças com facilidade"
                     </button>
                 </li>
                 <li>
-                    <button onclick="btn2_q4()" class="btn_segunda_q4">
+                    <button onclick="quiz(3)" class="btn_segunda_q4">
                         “Sou ganancioso, sempre querendo mais”
                     </button>
                 </li>
                 <li>
-                    <button onclick="btn3_q4()" class="btn_terceira_q4">
+                    <button onclick="quiz(7)" class="btn_terceira_q4">
                         "Sou muito orgulhoso"
                     </button>
                 </li>
                 <li>
-                    <button onclick="btn4_q4()" class="btn_quarta_q4">
+                    <button onclick="quiz(2)" class="btn_quarta_q4">
                         “Faria qualquer coisa para alcançar meu objetivo final.”
                     </button>
                 </li>
@@ -188,17 +188,17 @@
         <div class="botoes_q5">
             <ul>
                 <li>
-                    <button onclick="btn1_q5()" class="btn_primeira_q5">
+                    <button onclick="quiz(1)" class="btn_primeira_q5">
                         Adaptabilidade e agilidade
                     </button>
                 </li>
                 <li>
-                    <button onclick="btn2_q5()" class="btn_segunda_q5">
+                    <button onclick="quiz(2)" class="btn_segunda_q5">
                         Liderança e inteligência
                     </button>
                 </li>
                 <li>
-                    <button onclick="btn3_q5()" class="btn_terceira_q5">
+                    <button onclick="quiz(3)" class="btn_terceira_q5">
                         Força física e espiritualidade
                     </button>
                 </li>
@@ -219,17 +219,17 @@
         <div class="botoes_q6">
             <ul>
                 <li>
-                    <button onclick="btn1_q6()" class="btn_primeira_q6">
+                    <button onclick="quiz(3)" class="btn_primeira_q6">
                         Ser traído pelo melhor amigo
                     </button>
                 </li>
                 <li>
-                    <button onclick="btn2_q6()" class="btn_segunda_q6">
+                    <button onclick="quiz(2)" class="btn_segunda_q6">
                         Ser abandonado pela sua família
                     </button>
                 </li>
                 <li>
-                    <button onclick="btn3_q6()" class="btn_terceira_q6">
+                    <button onclick="quiz(1)" class="btn_terceira_q6">
                         Ter seus sonhos arruinados por alguém
                     </button>
                 </li>
@@ -242,28 +242,71 @@
 </html>
 <script>
 
-    /* 
     var resultado = [
+        /* TAI LUNG */
         {
             id: 1,
             pontos: 0,
-
         },
 
+        /* LORD SHEN */
         {
             id: 2,
             pontos: 0,
         },
 
+        /* KAI */
         {
             id: 3,
             pontos: 0,
         }
-    ] */
+    ]
+
 
   /*   function btn_inicio_quiz() {
         div.sumir.style.display= 'none'
     } */
 
+    /*
+    1 - Tai Lung 
+    2 - Lord Shein
+    3 - Kai
+
+    4 - Tai Lung / Lord Shen
+    5 - Tai Lung / Kai 
+    6 - Lord Shen / Kai 
+    7 - Tudo
     
+    */
+    function quiz(id){
+
+        switch (id) {
+            case 1:
+                resultado[0].pontos += 10   
+            break;
+            case 2:
+               resultado[1].pontos += 10   
+            break; 
+            case 3:
+               resultado[2].pontos += 10   
+            break; 
+            case 4:
+               resultado[0].pontos += 10   
+               resultado[1].pontos += 10   
+            break; 
+            case 5:
+               resultado[0].pontos += 10   
+               resultado[2].pontos += 10   
+            break; 
+            case 4:
+               resultado[1].pontos += 10   
+               resultado[2].pontos += 10   
+            break; 
+            default:
+                resultado[0].pontos += 10   
+                resultado[1].pontos += 10   
+                resultado[2].pontos += 10   
+            break; 
+        }
+    }
 </script>
