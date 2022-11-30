@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,49 +11,56 @@
 
     <link rel="stylesheet" href="css/sobremim.css">
     <link rel="stylesheet" href="css/quiz.css">
-    <link
-            href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap')" 
-             rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap')" rel="stylesheet">
 </head>
+
 <body>
-    
-   <!--HEADER INICIO-->
+
+    <!--HEADER INICIO-->
     <div class="header">
         <div class="logo">
             <img src="assets/imgs/logoYinYang.png">
-            <a href="index.html"><p>
-                Poonda!
-            </p></a>
+            <a href="index.html">
+                <p>
+                    Poonda!
+                </p>
+            </a>
         </div>
-            <div class="container">
-                <ul class="navbar">
-                    <li>
-                        <a href="sobremim.html">Sobre o Criador</a> 
-                    </li>
-                    <li>
-                        <a href="quiz.html">Quiz</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="cadastro.html">Cadastro</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="container">
+            <ul class="navbar">
+                <li>
+                    <a href="sobremim.html">Sobre o Criador</a>
+                </li>
+                <li>
+                    <a href="quiz.html">Quiz</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- FIM DO HEADER -->
 
     <!-- BANNER -->
 
-    <div class="banner">
-        <div class="div_background_quizBV">
-            <div class="container_quiz">
-                <p class="texto_quiz_bem_vindo">Bem-Vindo ao Quiz de personalidade de Kung fu Panda!</p>
-                <p class="texto_quiz_qual_vilao">Descubra qual vilão de Kung fu Panda você seria!</p>
-                <button class="btn_iniciar_quiz">INICIAR QUIZ</button>
+    <div id="div_sumir">
+        <div class="banner">
+            <div class="div_background_quizBV">
+                <div class="container_quiz">
+                    <p class="texto_quiz_bem_vindo">Bem-Vindo ao Quiz de personalidade de Kung fu Panda!</p>
+                    <p class="texto_quiz_qual_vilao">Descubra qual vilão de Kung fu Panda você seria!</p>
+                    <button onclick="btn_inicio_quiz()" class="btn_iniciar_quiz">INICIAR QUIZ</button>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div id="div_mostrar">
+
     </div>
 
 
@@ -62,7 +70,7 @@
 
     </div>
 
-    <div class="quiz1">
+    <div class="quiz1" id="quiz1">
         <div class="caixa_pergunta_q1">
             <span>
                 QUAL VILÃO VOCÊ PREFERE OU SE IDENTIFICA MAIS?
@@ -71,19 +79,19 @@
         <div class="caixa_resposta_q1">
             <ul>
                 <li>
-                    <img src="assets/imgs/img-icon/iconTai.png" alt="">
+                    <img src="assets/imgs/img-icon/iconTai.png" onclick="btn_tai_quiz()">
                 </li>
                 <li>
-                    <img src="assets/imgs/img-icon/iconShen.png" alt="">
+                    <img src="assets/imgs/img-icon/iconShen.png" onclick="btn_shen_quiz()">
                 </li>
                 <li>
-                    <img src="assets/imgs/img-icon/iconKai.png" alt="">
+                    <img src="assets/imgs/img-icon/iconKai.png" onclick="btn_kai_quiz()">
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class="quiz2">
+    <div class="quiz2" id="quiz2">
         <div class="caixa_pergunta_q2">
             <span>
                 QUAL DESSES SENTIMENTOS ESTEVE MAIS FREQUENTE EM SUA VIDA?
@@ -95,19 +103,19 @@
                     <button onclick="btn1_q2()" class="vinganca">Vingança</button>
                 </li>
                 <li>
-                    <button class="destruicao">Destruição</button>
+                    <button onclick="btn2_q2()" class="destruicao">Destruição</button>
                 </li>
                 <li>
-                    <button class="frustracao">Frustração</button>
+                    <button onclick="btn3_q2()" class="frustracao">Frustração</button>
                 </li>
                 <li>
-                    <button class="inveja">Inveja</button>
+                    <button onclick="btn4_q2()" class="inveja">Inveja</button>
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class="quiz3">
+    <div class="quiz3" id="quiz3">
         <div class="caixa_pergunta_q3">
             <span>
                 QUAL DESSAS FRASES DO OOGWAY VOCÊ PREFERE?
@@ -116,20 +124,24 @@
         <div class="botoes_q3">
             <ul>
                 <li>
-                    <button class="btn_primeira_q3">“Aquele que foge do seu destino acaba indo de encontro a ele…”
+                    <button onclick="btn1_q3()" class="btn_primeira_q3">
+                        “Aquele que foge do seu destino acaba indo de encontro a ele…”
                     </button>
                 </li>
                 <li>
-                    <button class="btn_segunda_q3">“Quanto mais você toma, menos você tem”</button>
+                    <button onclick="btn2_q3()" class="btn_segunda_q3">
+                        “Quanto mais você toma, menos você tem”
+                    </button>
                 </li>
             </ul>
-            <button class="btn_terceira_q3">“Se o caminho que percorrerem leva vocês sempre de volta a si mesmos, então não irão a lugar algum.”
+            <button onclick="btn3_q3()" class="btn_terceira_q3">
+                “Se o caminho que percorrerem leva vocês sempre de volta a si mesmos, então não irão a lugar algum.”
             </button>
         </div>
     </div>
 
 
-    <div class="quiz4">
+    <div class="quiz4" id="quiz4">
         <div class="caixa_q4">
             <div class="caixa_pergunta_q4">
                 <span>
@@ -141,22 +153,30 @@
         <div class="botoes_q4">
             <ul>
                 <li>
-                    <button class="btn_primeira_q4">“Não aceito mudanças com facilidade"</button>
+                    <button onclick="btn1_q4()" class="btn_primeira_q4">
+                        “Não aceito mudanças com facilidade"
+                    </button>
                 </li>
                 <li>
-                    <button class="btn_segunda_q4">“Sou ganancioso, sempre querendo mais”</button>
+                    <button onclick="btn2_q4()" class="btn_segunda_q4">
+                        “Sou ganancioso, sempre querendo mais”
+                    </button>
                 </li>
                 <li>
-                    <button class="btn_terceira_q4">"Sou muito orgulhoso"</button>
+                    <button onclick="btn3_q4()" class="btn_terceira_q4">
+                        "Sou muito orgulhoso"
+                    </button>
                 </li>
                 <li>
-                    <button class="btn_quarta_q4">“Faria qualquer coisa para alcançar meu objetivo final.”</button>
+                    <button onclick="btn4_q4()" class="btn_quarta_q4">
+                        “Faria qualquer coisa para alcançar meu objetivo final.”
+                    </button>
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class="quiz5">
+    <div class="quiz5" id="quiz5">
         <div class="caixa_q5">
             <div class="caixa_pergunta_q5">
                 <span>
@@ -168,20 +188,26 @@
         <div class="botoes_q5">
             <ul>
                 <li>
-                    <button class="btn_primeira_q5">Adaptabilidade e agilidade</button>
+                    <button onclick="btn1_q5()" class="btn_primeira_q5">
+                        Adaptabilidade e agilidade
+                    </button>
                 </li>
                 <li>
-                    <button class="btn_segunda_q5">Liderança e inteligência</button>
+                    <button onclick="btn2_q5()" class="btn_segunda_q5">
+                        Liderança e inteligência
+                    </button>
                 </li>
                 <li>
-                    <button class="btn_terceira_q5">Força física e espiritualidade</button>
+                    <button onclick="btn3_q5()" class="btn_terceira_q5">
+                        Força física e espiritualidade
+                    </button>
                 </li>
             </ul>
         </div>
     </div>
 
 
-    <div class="quiz6">
+    <div class="quiz6" id="quiz6">
         <div class="caixa_q6">
             <div class="caixa_pergunta_q6">
                 <span>
@@ -193,17 +219,51 @@
         <div class="botoes_q6">
             <ul>
                 <li>
-                    <button class="btn_primeira_q6">Ser traído pelo melhor amigo</button>
+                    <button onclick="btn1_q6()" class="btn_primeira_q6">
+                        Ser traído pelo melhor amigo
+                    </button>
                 </li>
                 <li>
-                    <button class="btn_segunda_q6">Ser abandonado pela sua família</button>
+                    <button onclick="btn2_q6()" class="btn_segunda_q6">
+                        Ser abandonado pela sua família
+                    </button>
                 </li>
                 <li>
-                    <button class="btn_terceira_q6">Ter seus sonhos arruinados por alguém</button>
+                    <button onclick="btn3_q6()" class="btn_terceira_q6">
+                        Ter seus sonhos arruinados por alguém
+                    </button>
                 </li>
             </ul>
 
-    </div>
-    
+        </div>
+
 </body>
+
 </html>
+<script>
+
+    /* 
+    var resultado = [
+        {
+            id: 1,
+            pontos: 0,
+
+        },
+
+        {
+            id: 2,
+            pontos: 0,
+        },
+
+        {
+            id: 3,
+            pontos: 0,
+        }
+    ] */
+
+  /*   function btn_inicio_quiz() {
+        div.sumir.style.display= 'none'
+    } */
+
+    
+</script>
