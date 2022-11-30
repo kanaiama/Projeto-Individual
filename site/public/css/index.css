@@ -157,7 +157,7 @@
    /* CARROSSEL - KAI */
 
 
-   .titulo-kai {
+.titulo-kai {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,3 +244,135 @@
     background-color: #7D4B0F;
     color: white;
 }
+
+
+/* SINOPSE FILMES */
+.div_titulo_sinopse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 70px;
+    width: 40vw;
+    height: 13vh;
+    border-radius: 0 30px 30px 0;
+    background-color: #037623;
+    
+}
+
+
+.div_titulo_sinopse h2 {
+    font-size: 90px;
+    color: #f1f1f1;
+    text-align: justify;
+}
+
+
+/* SINOPSE 1 */
+
+.fundo_sinopse1 {
+    background-color: #00354B;
+    height: 140vh;
+    width: 70vw;
+    margin-left: 367px;
+    border-radius: 70px 0 0 70px ;
+}
+
+.titulo_filme1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.title_kf {
+    color: #f1f1f1;
+}
+
+.um {
+    color: #0012B8;
+}
+
+.conteudo_sinopse1 {
+    display: flex;
+    justify-content: center;
+    height: 120vh;
+    margin-left: -400px;
+    background-color: #050524;
+}
+
+.imagem_sinopse1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem_sinopse1 img {
+    margin-left: 50px;
+    margin-top: -200px
+}
+
+.imagem_sinopse1 span {
+    color: #f1f1f1;
+    font-size: 40px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 70px;
+    margin-top: -200px;
+}
+
+.frase_final {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: -190px;
+    margin-left: -300px;
+    margin-right: 20px;
+}
+
+.frase_final span {
+    color: #f1f1f1;
+    font-size: 40px;
+    text-align: justify;
+}
+
+
+
+
+/* SINOPSE 2 */
+
+.fundo_sinopse2 {
+    background-color: #003D3D;
+    height: 140vh;
+    width: 70vw;
+    margin-top: 50px;
+    border-radius: 0 70px 70px 0 ;
+}
+
+.titulo_filme2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.title_kf {
+    color: #f1f1f1;
+}
+
+.dois {
+    color: #b80000;
+}
+
+.conteudo_sinopse2 {
+    display: flex;
+    justify-content: center;
+    height: 120vh;
+    width: 98vw;
+    background-color: #2B0000;
+}
+
+.imagem_sinopse2 img{
+    width: 100vw;
+    background-size: cover;
+}
+
+
