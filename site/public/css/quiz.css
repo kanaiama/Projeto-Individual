@@ -2,7 +2,7 @@
 /* Quiz */
 
 .banner {
-    background-image: url(../assets/imgs/img-quiz/bemvindo.png);
+    /* background-image: url(../assets/imgs/img-quiz/bemvindo.png); */  
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -16,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     gap: 100px;
+
 } 
 
 
@@ -38,11 +39,30 @@
     background-color: #A2B627;
     height: 9vh;
     width: 15vw;
+    cursor: pointer;
+}
 
+.btn_iniciar_quiz:hover {
+    transform: scale(110%);
 }
 
 
 /* QUIZ 1 */
+
+.quiz1, .quiz2, .quiz3, .quiz4, .quiz5, .quiz6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz1 img {
+    cursor: pointer;
+}
+
+.quiz1 img:hover {
+    transform: scale(110%);
+}
 
 .caixa_pergunta_q1 {
     display: flex;
@@ -51,7 +71,7 @@
     width: 90vw;
     height: 30vh;
     margin-left: 55px;
-    border-radius: 30px;
+    border-radius: 5px;
     background-color: #507B6E;
 }
 
@@ -79,6 +99,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .caixa_pergunta_q2 {
@@ -86,8 +107,10 @@
     align-items: center;
     justify-content: center;
     background-image: url(../assets/imgs/img-quiz/banner_quiz2.png);
+    /* background-color: #f1f1f1; */
     background-size: cover;
-    height: 100vh;
+    border-radius: 5px;
+    height: 50vh;
     width: 60vw;
 }
 
@@ -99,18 +122,23 @@
 
 .botoes_q2 ul{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: flex-end;
-    gap: 30px;
+    align-items: center;
+    gap: 10px;
 }
 
 .botoes_q2 button {
     margin-right: 100px;
-    width: 25vw;
-    height: 20vh;
+    width: 15vw;
+    height: 10vh;
     font-size: 50px;
-    border-radius: 12px;
+    border-radius: 5px;
+}
+
+.botoes_q2 button:hover {
+    cursor: pointer;
+    transform: scale(110%);
 }
 
 .vinganca {
@@ -133,6 +161,13 @@
 
 /* QUIZ 3 */
 
+.quiz3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .caixa_pergunta_q3 {
     display: flex;
     justify-content: center;
@@ -141,25 +176,33 @@
     background-size: cover;
     margin-left: 100px;
     margin-bottom: 30px;
-    height: 70vh;
-    width: 83vw;
+    height: 50vh;
+    width: 60vw;
 }
 
 .caixa_pergunta_q3 span {
     font-size: 80px;
     color: #f1f1f1;
+    text-align: center;
 }
 
 .botoes_q3 ul{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20px;
 }
 
 .botoes_q3 button {
-    width: 43vw;
-    height: 23vh;
+    width: 30vw;
+    height: 20vh;
     border-radius: 15px;
-    font-size: 50px;
+    font-size: 40px;
+    /* gap: px; */
+}
+
+.botoes_q3 button:hover {
+    cursor: pointer;
+    transform: scale(110%);
 }
 
 .btn_primeira_q3 {
@@ -173,8 +216,8 @@
 }
 
 .btn_terceira_q3 {
-    margin-top: 10px;
-    margin-left: 360px;
+    /* margin-top: 10px; */
+    /* margin-left: 360px; */
     background-color: #142023;
     color: #C5CBDB;
 }
@@ -184,17 +227,20 @@
 
 .caixa_q4 {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    margin-top: 30vh;
 }
 
 .caixa_pergunta_q4 {
     display: flex;
-    justify-items: flex-end;
+    /* justify-items: flex-end; */
     align-items: center;
     background-image: url(../assets/imgs/img-quiz/banner_quiz4.png);
     background-size: cover;
     width: 80vw;
     height: 50vh;
+    border-radius: 5px;
 }
 
 .caixa_pergunta_q4 span {
@@ -223,6 +269,11 @@
     color: #f1f1f1;
 }
 
+.botoes_q4 button:hover {
+    cursor: pointer;
+    transform: scale(110%);
+}
+
 .btn_primeira_q4 {
     background-color: #6F6017;
 }
@@ -245,6 +296,7 @@
 .caixa_q5 {
     display: flex;
     justify-content: flex-start;
+    height: 30vh;
 }
 
 .caixa_pergunta_q5 {
@@ -254,7 +306,8 @@
     background-image: url(../assets/imgs/img-quiz/banner_quiz5.png);
     background-size: cover;
     width: 80vw;
-    height: 50vh;
+    height: 40vh;
+    /* margin-top: 20vh; */
 }
 
 .caixa_pergunta_q5 span {

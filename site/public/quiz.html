@@ -50,11 +50,185 @@
     <div id="div_sumir">
         <div class="banner">
             <div class="div_background_quizBV">
-                <div class="container_quiz">
+                <div class="container_quiz" id="container_quiz"  style="display: flex;">
                     <p class="texto_quiz_bem_vindo">Bem-Vindo ao Quiz de personalidade de Kung fu Panda!</p>
                     <p class="texto_quiz_qual_vilao">Descubra qual vilão de Kung fu Panda você seria!</p>
                     <button onclick="btn_inicio_quiz()" class="btn_iniciar_quiz">INICIAR QUIZ</button>
                 </div>
+
+                <div class="quiz1" id="quiz1" style="display: none;">
+                    <div class="caixa_pergunta_q1">
+                        <span>
+                            QUAL VILÃO VOCÊ PREFERE OU SE IDENTIFICA MAIS?
+                        </span>
+                    </div>
+                    <div class="caixa_resposta_q1">
+                        <ul>
+                            <li>
+                                <img src="assets/imgs/img-icon/iconTai.png" onclick="quiz(1)">
+                            </li>
+                            <li>
+                                <img src="assets/imgs/img-icon/iconShen.png" onclick="quiz(2)">
+                            </li>
+                            <li>
+                                <img src="assets/imgs/img-icon/iconKai.png" onclick="quiz(3)">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="quiz2" id="quiz2" style="display: none;">
+                    <div class="caixa_pergunta_q2">
+                        <span>
+                            QUAL DESSES SENTIMENTOS ESTEVE MAIS FREQUENTE EM SUA VIDA?
+                        </span>
+                    </div>
+                    <div class="botoes_q2">
+                        <ul>
+                            <li>
+                                <button onclick="quiz(5)" class="vinganca">Vingança</button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(7)" class="destruicao">Destruição</button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(4)" class="frustracao">Frustração</button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(6)" class="inveja">Inveja</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="quiz3" id="quiz3" style="display: none;">
+                    <div class="caixa_pergunta_q3">
+                        <span>
+                            QUAL DESSAS FRASES DO OOGWAY VOCÊ PREFERE?
+                        </span>
+                    </div>
+                    <div class="botoes_q3">
+                        <ul>
+                            <li>
+                                <button onclick="quiz(2)" class="btn_primeira_q3">
+                                    “Aquele que foge do seu destino acaba indo de encontro a ele…”
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(3)" class="btn_segunda_q3">
+                                    “Quanto mais você toma, menos você tem”
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(1)" class="btn_terceira_q3">
+                                    “Se o caminho que percorrerem leva vocês sempre de volta a si mesmos, então não irão a lugar algum.”
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            
+                <div class="quiz4" id="quiz4"  style="display: none;">
+                    <div class="caixa_q4">
+                        <div class="caixa_pergunta_q4">
+                            <span>
+                                ESCOLHA UMA DAS FRASES A SEGUIR QUE VOCÊ SE IDENTIFICA MAIS.
+                            </span>
+                        </div>
+                    </div>
+            
+                    <div class="botoes_q4">
+                        <ul>
+                            <li>
+                                <button onclick="quiz(1)" class="btn_primeira_q4">
+                                    “Não aceito mudanças com facilidade"
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(3)" class="btn_segunda_q4">
+                                    “Sou ganancioso, sempre querendo mais”
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(7)" class="btn_terceira_q4">
+                                    "Sou muito orgulhoso"
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(2)" class="btn_quarta_q4">
+                                    “Faria qualquer coisa para alcançar meu objetivo final.”
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="quiz5" id="quiz5" style="display: none;">
+                    <div class="caixa_q5">
+                        <div class="caixa_pergunta_q5">
+                            <span>
+                                QUAL DESSAS CARACTERÍSTICAS VOCÊ PREZA MAIS?
+                            </span>
+                        </div>
+                    </div>
+            
+                    <div class="botoes_q5">
+                        <ul>
+                            <li>
+                                <button onclick="quiz(1)" class="btn_primeira_q5">
+                                    Adaptabilidade e agilidade
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(2)" class="btn_segunda_q5">
+                                    Liderança e inteligência
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(3)" class="btn_terceira_q5">
+                                    Força física e espiritualidade
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            
+                <div class="quiz6" id="quiz6" style="display: none;">
+                    <div class="caixa_q6">
+                        <div class="caixa_pergunta_q6">
+                            <span>
+                                QUAL DESSAS SITUAÇÕES DOERIA MAIS EM VOCÊ?
+                            </span>
+                        </div>
+                    </div>
+            
+                    <div class="botoes_q6">
+                        <ul>
+                            <li>
+                                <button onclick="quiz(3)" class="btn_primeira_q6">
+                                    Ser traído pelo melhor amigo
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(2)" class="btn_segunda_q6">
+                                    Ser abandonado pela sua família
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="quiz(1)" class="btn_terceira_q6">
+                                    Ter seus sonhos arruinados por alguém
+                                </button>
+                            </li>
+                        </ul>
+            
+                    </div>
+
+                    <div class="resultado_quiz" id="resul" style="display: none;">
+                        <p>Parabens seu personagem é:</p>
+                    </div>
+            
             </div>
         </div>
     </div>
@@ -70,177 +244,16 @@
 
     </div>
 
-    <div class="quiz1" id="quiz1">
-        <div class="caixa_pergunta_q1">
-            <span>
-                QUAL VILÃO VOCÊ PREFERE OU SE IDENTIFICA MAIS?
-            </span>
-        </div>
-        <div class="caixa_resposta_q1">
-            <ul>
-                <li>
-                    <img src="assets/imgs/img-icon/iconTai.png" onclick="quiz(1)">
-                </li>
-                <li>
-                    <img src="assets/imgs/img-icon/iconShen.png" onclick="quiz(2)">
-                </li>
-                <li>
-                    <img src="assets/imgs/img-icon/iconKai.png" onclick="quiz(3)">
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="quiz2" id="quiz2">
-        <div class="caixa_pergunta_q2">
-            <span>
-                QUAL DESSES SENTIMENTOS ESTEVE MAIS FREQUENTE EM SUA VIDA?
-            </span>
-        </div>
-        <div class="botoes_q2">
-            <ul>
-                <li>
-                    <button onclick="quiz(5)" class="vinganca">Vingança</button>
-                </li>
-                <li>
-                    <button onclick="quiz(7)" class="destruicao">Destruição</button>
-                </li>
-                <li>
-                    <button onclick="quiz(4)" class="frustracao">Frustração</button>
-                </li>
-                <li>
-                    <button onclick="quiz(6)" class="inveja">Inveja</button>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="quiz3" id="quiz3">
-        <div class="caixa_pergunta_q3">
-            <span>
-                QUAL DESSAS FRASES DO OOGWAY VOCÊ PREFERE?
-            </span>
-        </div>
-        <div class="botoes_q3">
-            <ul>
-                <li>
-                    <button onclick="quiz(2)" class="btn_primeira_q3">
-                        “Aquele que foge do seu destino acaba indo de encontro a ele…”
-                    </button>
-                </li>
-                <li>
-                    <button onclick="quiz(3)" class="btn_segunda_q3">
-                        “Quanto mais você toma, menos você tem”
-                    </button>
-                </li>
-            </ul>
-            <button onclick="quiz(1)" class="btn_terceira_q3">
-                “Se o caminho que percorrerem leva vocês sempre de volta a si mesmos, então não irão a lugar algum.”
-            </button>
-        </div>
-    </div>
-
-
-    <div class="quiz4" id="quiz4">
-        <div class="caixa_q4">
-            <div class="caixa_pergunta_q4">
-                <span>
-                    ESCOLHA UMA DAS FRASES A SEGUIR QUE VOCÊ SE IDENTIFICA MAIS.
-                </span>
-            </div>
-        </div>
-
-        <div class="botoes_q4">
-            <ul>
-                <li>
-                    <button onclick="quiz(1)" class="btn_primeira_q4">
-                        “Não aceito mudanças com facilidade"
-                    </button>
-                </li>
-                <li>
-                    <button onclick="quiz(3)" class="btn_segunda_q4">
-                        “Sou ganancioso, sempre querendo mais”
-                    </button>
-                </li>
-                <li>
-                    <button onclick="quiz(7)" class="btn_terceira_q4">
-                        "Sou muito orgulhoso"
-                    </button>
-                </li>
-                <li>
-                    <button onclick="quiz(2)" class="btn_quarta_q4">
-                        “Faria qualquer coisa para alcançar meu objetivo final.”
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="quiz5" id="quiz5">
-        <div class="caixa_q5">
-            <div class="caixa_pergunta_q5">
-                <span>
-                    QUAL DESSAS CARACTERÍSTICAS VOCÊ PREZA MAIS?
-                </span>
-            </div>
-        </div>
-
-        <div class="botoes_q5">
-            <ul>
-                <li>
-                    <button onclick="quiz(1)" class="btn_primeira_q5">
-                        Adaptabilidade e agilidade
-                    </button>
-                </li>
-                <li>
-                    <button onclick="quiz(2)" class="btn_segunda_q5">
-                        Liderança e inteligência
-                    </button>
-                </li>
-                <li>
-                    <button onclick="quiz(3)" class="btn_terceira_q5">
-                        Força física e espiritualidade
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="quiz6" id="quiz6">
-        <div class="caixa_q6">
-            <div class="caixa_pergunta_q6">
-                <span>
-                    QUAL DESSAS SITUAÇÕES DOERIA MAIS EM VOCÊ?
-                </span>
-            </div>
-        </div>
-
-        <div class="botoes_q6">
-            <ul>
-                <li>
-                    <button onclick="quiz(3)" class="btn_primeira_q6">
-                        Ser traído pelo melhor amigo
-                    </button>
-                </li>
-                <li>
-                    <button onclick="quiz(2)" class="btn_segunda_q6">
-                        Ser abandonado pela sua família
-                    </button>
-                </li>
-                <li>
-                    <button onclick="quiz(1)" class="btn_terceira_q6">
-                        Ter seus sonhos arruinados por alguém
-                    </button>
-                </li>
-            </ul>
-
-        </div>
-
+    
 </body>
 
 </html>
 <script>
+
+    function btn_inicio_quiz() {
+        container_quiz.style.display = 'none'
+        quiz1.style.display = 'flex'
+    }
 
     var resultado = [
         /* TAI LUNG */
@@ -279,6 +292,27 @@
     
     */
     function quiz(id){
+
+        if (quiz1.style.display == 'flex') {
+            quiz1.style.display = 'none'
+            quiz2.style.display = 'flex'
+        } else if (quiz2.style.display == 'flex') {
+            quiz2.style.display = 'none'
+            quiz3.style.display = 'flex'
+        } else if (quiz3.style.display == 'flex') {
+            quiz3.style.display = 'none'
+            quiz4.style.display = 'flex'
+        } else if (quiz4.style.display == 'flex') {
+            quiz4.style.display = 'none'
+            quiz5.style.display = 'flex'
+        } else if (quiz5.style.display == 'flex') {
+            quiz5.style.display = 'none'
+            quiz6.style.display = 'flex'
+        } else if (quiz6.style.display == 'flex') {
+            quiz6.style.display = 'none'
+            resul.style.display = 'flex'
+        }
+
 
         switch (id) {
             case 1:
