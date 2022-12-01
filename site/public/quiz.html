@@ -233,27 +233,19 @@
         </div>
     </div>
 
-    <div id="div_mostrar">
-
+    <div class="resultado_tai">
+        <div class="fundo_tai_quiz">
+            <div class="nome_resultado">
+                <h2>TAI <span class="lung">LUNG</span></h2>
+            </div>
+            
+        </div>
     </div>
-
-
-    <!-- QUIZES -->
-
-    <div class="quiz_atual">
-
-    </div>
-
     
 </body>
 
 </html>
 <script>
-
-    function btn_inicio_quiz() {
-        container_quiz.style.display = 'none'
-        quiz1.style.display = 'flex'
-    }
 
     var resultado = [
         /* TAI LUNG */
@@ -275,6 +267,10 @@
         }
     ]
 
+    function btn_inicio_quiz() {
+        container_quiz.style.display = 'none'
+        quiz1.style.display = 'flex'
+    }
 
     /*
     1 - Tai Lung 
@@ -286,7 +282,6 @@
     6 - Lord Shen / Kai 
     7 - Tudo    
     */
-
     
     function quiz(id){
 
