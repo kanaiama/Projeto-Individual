@@ -207,75 +207,73 @@
                     <div class="botoes_q6">
                         <ul>
                             <li>
-                                <button onclick="quiz(3)" class="btn_primeira_q6">
+                                <button onclick="quiz(3), resultado_final()" class="btn_primeira_q6">
                                     Ser traído pelo melhor amigo
                                 </button>
                             </li>
                             <li>
-                                <button onclick="quiz(2)" class="btn_segunda_q6">
+                                <button onclick="quiz(2), resultado_final()" class="btn_segunda_q6">
                                     Ser abandonado pela sua família
                                 </button>
                             </li>
                             <li>
-                                <button onclick="quiz(1)" class="btn_terceira_q6">
+                                <button onclick="quiz(1), resultado_final()" class="btn_terceira_q6">
                                     Ter seus sonhos arruinados por alguém
                                 </button>
                             </li>
                         </ul>
-            
                     </div>
 
+                    <!-- RESULTADO QUIZ  -->
+
                     <div class="resultado_quiz" id="resul" style="display: none;">
-                        <p>Parabens seu personagem é:</p>
-                    </div>
+                      
+                            <!-- <div class="resultado_quiz_tai" id="resultado_tai">
+                                <div class="fundo_quiz_tai">
+                                    <div class="nome_resultado">
+                                        <h2>TAI LUNG</h2>
+                                    </div>
+                                    <div class="imagem_resultado">
+                                        <img src="assets/imgs/img-quiz/resultadoTai.png" alt="">
+                                    </div>
+                                    <div class="descricao_resultado">
+                                        <span>Assim como Tai Lung, você consegue se adaptar fácil ao ambiente, tendo um racíocinio rápido e eficaz. Você aparenta ter traços de uma tristeza profunda oculta, sentimento de desilusão com seu destino, de potencial perdido e uma forte sensação de abandono. Esses sentimentos te fazem destruir quase tudo ao seu redor como consequência</span>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                            <div class="resultado_quiz_shen" id="resultado_shen">
+                                <div class="fundo_quiz_shen">
+                                    <div class="nome_resultado">
+                                        <h2>LORD SHEN</h2>
+                                    </div>
+                                    <div class="imagem_resultado">
+                                        <img src="assets/imgs/img-quiz/resultadoShen.png" alt="">
+                                    </div>
+                                    <div class="descricao_resultado">
+                                        <span>Assim como Shen, você tem aptidão parar liderar outras pessoas, sendo que sua inteligência e criatividade é o seu forte. Contudo, você aparenta viver sua vida guiado/a pelo medo do futuro e por insegurança. Isso te faz agir por impulso, machucando pessoas ao seu redor e usando uma máscara de arrogância e superioridade pra tentar se sentir melhor.  </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        <div class="resultado_quiz_kai" id="resultado_kai">
+                            <div class="fundo_quiz_kai">
+                                <div class="nome_resultado">
+                                    <h2>KAI</h2>
+                                </div>
+                                <div class="imagem_resultado">
+                                    <img src="assets/imgs/img-quiz/resultadoKai.png" alt="">
+                                </div>
+                                <div class="descricao_resultado">
+                                    <span>Assim como Kai, você exala uma força incomparável  e têm um controle emocional forte. Contudo, sendo determinado a conseguir tudo o que quer, tudo indica que você é carente de atenção e inveja quem tem. É ganancioso, não ficando satisfeito com o que já tem. Paranóico/a e acha que as pessoas são desleais à você, quando na real o contrário é o que mais ocorre.</span>
+                                </div>
+                            </div>
+                      </div>
+                 </div>
              </div>
         </div>
     </div>
 
-    <div id="resultado_quiz">
-  
-        <div class="resultado_quiz_tai" id="resultado_tai">
-            <div class="fundo_quiz_tai">
-                <div class="nome_resultado">
-                    <h2>TAI LUNG</h2>
-                </div>
-                <div class="imagem_resultado">
-                    <img src="assets/imgs/img-quiz/resultadoTai.png" alt="">
-                </div>
-                <div class="descricao_resultado">
-                    <span>Assim como Tai Lung, você consegue se adaptar fácil ao ambiente, tendo um racíocinio rápido e eficaz. Você aparenta ter traços de uma tristeza profunda oculta, sentimento de desilusão com seu destino, de potencial perdido e uma forte sensação de abandono. Esses sentimentos te fazem destruir quase tudo ao seu redor como consequência</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="resultado_quiz_shen" id="resultado_shen">
-            <div class="fundo_quiz_shen">
-                <div class="nome_resultado">
-                    <h2>LORD SHEN</h2>
-                </div>
-                <div class="imagem_resultado">
-                    <img src="assets/imgs/img-quiz/resultadoShen.png" alt="">
-                </div>
-                <div class="descricao_resultado">
-                    <span>Assim como Shen, você tem aptidão parar liderar outras pessoas, sendo que sua inteligência e criatividade é o seu forte. Contudo, você aparenta viver sua vida guiado/a pelo medo do futuro e por insegurança. Isso te faz agir por impulso, machucando pessoas ao seu redor e usando uma máscara de arrogância e superioridade pra tentar se sentir melhor.  </span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="resultado_quiz_kai" id="resultado_kai">
-            <div class="fundo_quiz_kai">
-                <div class="nome_resultado">
-                    <h2>KAI</h2>
-                </div>
-                <div class="imagem_resultado">
-                    <img src="assets/imgs/img-quiz/resultadoKai.png" alt="">
-                </div>
-                <div class="descricao_resultado">
-                    <span>Assim como Kai, você exala uma força incomparável  e têm um controle emocional forte. Contudo, sendo determinado a conseguir tudo o que quer, tudo indica que você é carente de atenção e inveja quem tem. É ganancioso, não ficando satisfeito com o que já tem. Paranóico/a e acha que as pessoas são desleais à você, quando na real o contrário é o que mais ocorre.</span>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
@@ -370,8 +368,20 @@
         }
 
 
-        if(resultado.id[1] > resultado .id[2] && resultado.id[1] > resultado.id[3]) {
-            
+        
+    }
+    
+    /* VALIDAÇÃO - QUAL PERSONAGEM O USUARIO TIROU */
+
+    var cont = 0;
+
+    function resultado_final () {
+        for (var i = 0; i <= 3; i++) {
+            if (resultado[i].pontos > cont) {
+                cont = resultado[i].id
+            }
+
         }
+
     }
 </script>
