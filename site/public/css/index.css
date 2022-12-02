@@ -320,7 +320,7 @@
     margin-top: -200px;
 }
 
-.frase_final {
+.frase_final_s1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -329,7 +329,7 @@
     margin-right: 20px;
 }
 
-.frase_final span {
+.frase_final_s1 span {
     color: #f1f1f1;
     font-size: 40px;
     text-align: justify;
@@ -363,16 +363,110 @@
 }
 
 .conteudo_sinopse2 {
-    display: flex;
-    justify-content: center;
     height: 120vh;
     width: 98vw;
     background-color: #2B0000;
 }
 
-.imagem_sinopse2 img{
-    width: 100vw;
-    background-size: cover;
+.imagem_frasefinal {
+    height: 300vh;
+    display: flex;
 }
+
+.imagem_sinopse2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    
+}
+
+.imagem_sinopse2 img{
+    width: 60vw;
+    border-radius: 0 100px 100px 0;
+}
+
+.frase_s2 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase_s2 span {
+    font-size: 40px;
+    color: #f1f1f1;
+}
+
+.frase_finals2 {
+    font-size: 40px;
+    color: #f1f1f1;
+}
+
+
+
+
+/* SINOPSE 3 */
+
+.fundo_sinopse3 {
+    background-color: #454023;
+    height: 140vh;
+    width: 70vw;
+    margin-top: 50px;
+    border-radius: 0 70px 70px 0 ;
+}
+
+.titulo_filme3 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.title_kf3{
+    color: #f1f1f1;
+}
+
+.n3 {
+    color: #42FF00;
+}
+
+.conteudo_sinopse3 {
+    height: 120vh;
+    width: 98vw;
+    background-color: #003D2B;
+}
+
+.frase_s3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.frase_s3 span {
+    font-size: 40px;
+    margin-top: 10px;
+    width: 90vw;
+    color: #f1f1f1;
+    text-align: justify;
+}
+
+.container_img_sinopse3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 70vh;
+    width: 100%;
+}
+
+.img_frase_s3 {
+    display: flex;
+    justify-content: center;
+}
+
+.img_frase_s3 img {
+    height: 70vh;
+    width: 100vw;
+    border-radius: 30px
+}
+
 
 
