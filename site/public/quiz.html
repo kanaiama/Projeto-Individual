@@ -50,7 +50,7 @@
     <div id="div_sumir">
         <div class="banner">
             <div class="div_background_quizBV">
-                <div class="container_quiz" id="container_quiz"  style="display: flex;">
+                <div class="container_quiz" id="container_quiz" style="display: flex;">
                     <p class="texto_quiz_bem_vindo">Bem-Vindo ao Quiz de personalidade de Kung fu Panda!</p>
                     <p class="texto_quiz_qual_vilao">Descubra qual vilão de Kung fu Panda você seria!</p>
                     <button onclick="btn_inicio_quiz()" class="btn_iniciar_quiz">INICIAR QUIZ</button>
@@ -76,7 +76,7 @@
                         </ul>
                     </div>
                 </div>
-            
+
                 <div class="quiz2" id="quiz2" style="display: none;">
                     <div class="caixa_pergunta_q2">
                         <span>
@@ -86,21 +86,21 @@
                     <div class="botoes_q2">
                         <ul>
                             <li>
-                                <button onclick="quiz(5)" class="vinganca">Vingança</button>
+                                <button onclick="quiz(1)" class="raiva">Raiva</button>
                             </li>
                             <li>
-                                <button onclick="quiz(7)" class="destruicao">Destruição</button>
+                                <button onclick="quiz(4)" class="ganancia">Ganância</button>
                             </li>
                             <li>
-                                <button onclick="quiz(4)" class="frustracao">Frustração</button>
+                                <button onclick="quiz(2)" class="frustracao">Frustração</button>
                             </li>
                             <li>
-                                <button onclick="quiz(6)" class="inveja">Inveja</button>
+                                <button onclick="quiz(3)" class="inveja">Inveja</button>
                             </li>
                         </ul>
                     </div>
                 </div>
-            
+
                 <div class="quiz3" id="quiz3" style="display: none;">
                     <div class="caixa_pergunta_q3">
                         <span>
@@ -121,15 +121,16 @@
                             </li>
                             <li>
                                 <button onclick="quiz(1)" class="btn_terceira_q3">
-                                    “Se o caminho que percorrerem leva vocês sempre de volta a si mesmos, então não irão a lugar algum.”
+                                    “Se o caminho que percorrerem leva vocês sempre de volta a si mesmos, então não irão
+                                    a lugar algum.”
                                 </button>
                             </li>
                         </ul>
                     </div>
                 </div>
-            
-            
-                <div class="quiz4" id="quiz4"  style="display: none;">
+
+
+                <div class="quiz4" id="quiz4" style="display: none;">
                     <div class="caixa_q4">
                         <div class="caixa_pergunta_q4">
                             <span>
@@ -137,9 +138,10 @@
                             </span>
                         </div>
                     </div>
-            
+
                     <div class="botoes_q4">
                         <ul>
+
                             <li>
                                 <button onclick="quiz(1)" class="btn_primeira_q4">
                                     “Não aceito mudanças com facilidade"
@@ -151,7 +153,7 @@
                                 </button>
                             </li>
                             <li>
-                                <button onclick="quiz(7)" class="btn_terceira_q4">
+                                <button onclick="quiz(4)" class="btn_terceira_q4">
                                     "Sou muito orgulhoso"
                                 </button>
                             </li>
@@ -163,7 +165,7 @@
                         </ul>
                     </div>
                 </div>
-            
+
                 <div class="quiz5" id="quiz5" style="display: none;">
                     <div class="caixa_q5">
                         <div class="caixa_pergunta_q5">
@@ -172,7 +174,7 @@
                             </span>
                         </div>
                     </div>
-            
+
                     <div class="botoes_q5">
                         <ul>
                             <li>
@@ -193,8 +195,8 @@
                         </ul>
                     </div>
                 </div>
-            
-            
+
+
                 <div class="quiz6" id="quiz6" style="display: none;">
                     <div class="caixa_q6">
                         <div class="caixa_pergunta_q6">
@@ -203,7 +205,7 @@
                             </span>
                         </div>
                     </div>
-            
+
                     <div class="botoes_q6">
                         <ul>
                             <li>
@@ -223,56 +225,30 @@
                             </li>
                         </ul>
                     </div>
+                </div>
 
-                    <!-- RESULTADO QUIZ  -->
+                <!-- RESULTADO QUIZ  -->
 
-                    <div class="resultado_quiz" id="resul" style="display: none;">
-                      
-                            <!-- <div class="resultado_quiz_tai" id="resultado_tai">
-                                <div class="fundo_quiz_tai">
-                                    <div class="nome_resultado">
-                                        <h2>TAI LUNG</h2>
-                                    </div>
-                                    <div class="imagem_resultado">
-                                        <img src="assets/imgs/img-quiz/resultadoTai.png" alt="">
-                                    </div>
-                                    <div class="descricao_resultado">
-                                        <span>Assim como Tai Lung, você consegue se adaptar fácil ao ambiente, tendo um racíocinio rápido e eficaz. Você aparenta ter traços de uma tristeza profunda oculta, sentimento de desilusão com seu destino, de potencial perdido e uma forte sensação de abandono. Esses sentimentos te fazem destruir quase tudo ao seu redor como consequência</span>
-                                    </div>
-                                </div>
+                <div class="resultado_quiz" id="resul" style="display: none;">
+
+                    <div class="resultado_quiz_tai" id="resultado_tai">
+                        <div class="fundo_quiz_tai" id="resultado_background">
+                            <div class="nome_resultado">
+                                <h2 id="nomePersonagem"></h2>
                             </div>
-                            -->
-                            <div class="resultado_quiz_shen" id="resultado_shen">
-                                <div class="fundo_quiz_shen">
-                                    <div class="nome_resultado">
-                                        <h2>LORD SHEN</h2>
-                                    </div>
-                                    <div class="imagem_resultado">
-                                        <img src="assets/imgs/img-quiz/resultadoShen.png" alt="">
-                                    </div>
-                                    <div class="descricao_resultado">
-                                        <span>Assim como Shen, você tem aptidão parar liderar outras pessoas, sendo que sua inteligência e criatividade é o seu forte. Contudo, você aparenta viver sua vida guiado/a pelo medo do futuro e por insegurança. Isso te faz agir por impulso, machucando pessoas ao seu redor e usando uma máscara de arrogância e superioridade pra tentar se sentir melhor.  </span>
-                                    </div>
-                                </div>
+                            <div class="imagem_resultado">
+                                <img src="" id="imagemPersonagem">
                             </div>
-                            
-                        <div class="resultado_quiz_kai" id="resultado_kai">
-                            <div class="fundo_quiz_kai">
-                                <div class="nome_resultado">
-                                    <h2>KAI</h2>
-                                </div>
-                                <div class="imagem_resultado">
-                                    <img src="assets/imgs/img-quiz/resultadoKai.png" alt="">
-                                </div>
-                                <div class="descricao_resultado">
-                                    <span>Assim como Kai, você exala uma força incomparável  e têm um controle emocional forte. Contudo, sendo determinado a conseguir tudo o que quer, tudo indica que você é carente de atenção e inveja quem tem. É ganancioso, não ficando satisfeito com o que já tem. Paranóico/a e acha que as pessoas são desleais à você, quando na real o contrário é o que mais ocorre.</span>
-                                </div>
+                            <div class="descricao_resultado">
+                                <span id="descricaoPersonagem"></span>
                             </div>
-                      </div>
-                 </div>
-             </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
-    </div>
 
 </body>
 
@@ -304,18 +280,8 @@
         quiz1.style.display = 'flex'
     }
 
-    /*
-    1 - Tai Lung 
-    2 - Lord Shein
-    3 - Kai
 
-    4 - Tai Lung / Lord Shen
-    5 - Tai Lung / Kai 
-    6 - Lord Shen / Kai 
-    7 - Tudo    
-    */
-    
-    function quiz(id){
+    function quiz(id) {
 
         if (quiz1.style.display == 'flex') {
             quiz1.style.display = 'none'
@@ -337,51 +303,69 @@
             resul.style.display = 'flex'
         }
 
+        /*
+        1 - Tai Lung 
+        2 - Lord Shein
+        3 - Kai
+        4 - Tudo   
+        */
 
         switch (id) {
             case 1:
-                resultado[0].pontos += 10   
-            break;
+                resultado[0].pontos += 3
+                break;
             case 2:
-               resultado[1].pontos += 10   
-            break; 
+                resultado[1].pontos += 3
+                break;
             case 3:
-               resultado[2].pontos += 10   
-            break; 
-            case 4:
-               resultado[0].pontos += 10   
-               resultado[1].pontos += 10   
-            break; 
-            case 5:
-               resultado[0].pontos += 10   
-               resultado[2].pontos += 10   
-            break; 
-            case 4:
-               resultado[1].pontos += 10   
-               resultado[2].pontos += 10   
-            break; 
+                resultado[2].pontos += 3
+                break;
             default:
-                resultado[0].pontos += 10   
-                resultado[1].pontos += 10   
-                resultado[2].pontos += 10   
-            break; 
+                resultado[0].pontos += 3
+                resultado[1].pontos += 3
+                resultado[2].pontos += 3
+                break;
         }
 
 
-        
+
     }
-    
+
     /* VALIDAÇÃO - QUAL PERSONAGEM O USUARIO TIROU */
 
     var cont = 0;
+    var pontos = 0;
 
-    function resultado_final () {
+    function resultado_final() {
         for (var i = 0; i <= 3; i++) {
-            if (resultado[i].pontos > cont) {
-                cont = resultado[i].id
+            if (resultado[i].pontos > pontos) {
+                cont = resultado[i].id 
+                pontos = resultado[i].pontos
             }
+        }
+    }
 
+
+    function quizResultado() {
+        
+        if(cont == 1) {
+            resultado_background.style.background = "#0B1225"
+        } else if (cont == 2) {
+            resultado_background.style.background = "#210000"
+        } else {
+            resultado_background.style.background = "#0E1F1B"
         }
 
+        fetch(`/quiz/quizResultado/${cont}`)
+            .then(function (resposta) {
+                if (resposta.ok) {
+                    resposta.json()
+                        .then(function (resultado) {
+                            nomePersonagem.innerHTML = `${resultado[0].nome}`;
+                            imagemPersonagem.src = `${resultado[0].imagem}`;
+                            descricaoPersonagem.innerHTML = `${resultado[0].descricao}`;
+                        })
+                }
+            })
     }
 </script>

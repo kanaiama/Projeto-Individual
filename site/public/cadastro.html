@@ -37,40 +37,40 @@
             <!-- FORMULÁRIO DE INFORMAÇÕES -->
 
             <div class="caixa-formulario">
-        
-            <div class="container">
+               
+                <div class="container">
 
-                <p>Crie sua conta!</p>
-                <span></span>
+                    <p>Crie sua conta!</p>
+                    <span></span>
 
-                <div class="campo">
-                    <label for="ipt_nome">Nome</label>
-                    <input type="text" id="ipt_nome">               
-                </div>
-
-                <div class="campo">
-                    <label for="ipt_sobrenome">Sobrenome</label>
-                    <input type="text" id="ipt_sobrenome">
-                </div>
-
-                <div class="campo">
-                    <label for="ipt_email">E-mail</label>
-                    <input type="text" id="ipt_email">
-                </div>
-                
-                <div class="campo_senha">
-                    <div class="campo2">
-                        <label for="ipt_senha" id="label_senha">Senha</label>
-                        <input type="password" id="ipt_senha" onkeyup="senha()">
+                    <div class="campo">
+                        <label for="ipt_nome">Nome</label>
+                        <input type="text" id="ipt_nome">               
                     </div>
 
-                    <div class="campo2">
-                        <label for="ipt_confirmacaoSenha" id="label_confirmacaoSenha">Confirmar Senha</label>
-                        <input type="password" id="ipt_confirmacaoSenha" onkeyup="confirmar_senha()">
+                    <div class="campo">
+                        <label for="ipt_sobrenome">Sobrenome</label>
+                        <input type="text" id="ipt_sobrenome">
                     </div>
-                </div>
-                
-                <button class="btn_cadastrar"><a href="login.html">TORNE-SE UM DRAGÃO GUERREIRO!</a></button>
+
+                    <div class="campo">
+                        <label for="ipt_email">E-mail</label>
+                        <input type="text" id="ipt_email">
+                    </div>
+                    
+                    <div class="campo_senha">
+                        <div class="campo2">
+                            <label for="ipt_senha" id="label_senha">Senha</label>
+                            <input type="password" id="ipt_senha" onkeyup="senha()">
+                        </div>
+
+                        <div class="campo2">
+                            <label for="ipt_confirmacaoSenha" id="label_confirmacaoSenha">Confirmar Senha</label>
+                            <input type="password" id="ipt_confirmacaoSenha" onkeyup="confirmar_senha()">
+                        </div>
+                    </div>
+                    
+                    <button class="btn_cadastrar" onclick="cadastrar()">TORNE-SE UM DRAGÃO GUERREIRO!</button>
             </div>  
         </div>
     </div>
@@ -149,7 +149,6 @@
 
 
     function cadastrar() {
-        aguardar();
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
@@ -160,14 +159,9 @@
         var confirmacaoSenhaVar = ipt_confirmacaoSenha.value;
 
         if (nomeVar == "" || sobrenomeVar == "" || emailVar == ""  || senhaVar == "" || confirmacaoSenhaVar == "") {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "Insira todos os campos para prosseguir!";
+            alert("INSIRA TODOS OS CAMPOS PARA PROSSEGUIR!")
 
-            finalizarAguardar();
             return false;
-        }
-        else {
-            setInterval(sumirMensagem, 5000)
         }
 
         // Enviando o valor da nova input
@@ -180,38 +174,24 @@
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
+                sobrenomeServer: sobrenomeVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar,
-                confirmacaoSenhaServer: confirmacaoSenhaVar
+                senhaServer: senhaVar
             })
         }).then(function (resposta) {
 
-            console.log("resposta: ", resposta);
-
             if (resposta.ok) {
-                cardErro.style.display = "block";
-
-                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-
+               alert("Cadastro realizado com sucesso!")
                 setTimeout(() => {
                     window.location = "login.html";
                 }, "2000")
-                
-                limparFormulario();
-                finalizarAguardar();
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            finalizarAguardar();
         });
 
         return false;
     }
-
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
-
 </script>
