@@ -181,10 +181,10 @@ html {
 .frase_gif_tai span {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-    margin-left: 140px;
-    width: 60%;
-    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 80%;
+    font-size: 28px;
     color: white;
     text-align: justify;
 }

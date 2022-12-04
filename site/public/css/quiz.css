@@ -426,11 +426,20 @@
 
 /* RESULTADO - TAI LUNG */
 
+.resultado_quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
 .resultado_quiz_tai {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40vh;
+    margin-top: 800px;
 }
 
 .fundo_quiz_tai {
@@ -469,4 +478,39 @@
     text-align: justify;
     font-size: 30px;
     color: #f1f1f1;
+}
+
+
+/* RESULTADO - MÉTRICAS */
+
+.metrica {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90vw;
+
+}
+
+.metrica_resultado_escolha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_metrica_resultadoquiz {
+    font-size: 30px;
+    color: #f1f1f1;
+}
+
+.metrica_tai img {
+    height: 20vh;
+}
+
+.metrica_shen img{
+    height: 20vh;
+}
+
+.metrica_kai img {
+    height: 20vh;
 }
