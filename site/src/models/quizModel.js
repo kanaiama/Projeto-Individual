@@ -11,7 +11,19 @@ function quizResultado(nome) {
     return database.executar(instrucao);
 }
 
+function registro(usuario, cont) {
+
+    var instrucao = `
+       insert into quiz values 
+       (null, ${usuario}, ${cont})
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+
 
 module.exports = {
-    quizResultado
+    quizResultado,
+    registro
 };

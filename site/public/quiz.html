@@ -229,7 +229,7 @@
 
                 <!-- RESULTADO QUIZ  -->
 
-                <div class="resultado_quiz" id="resul" style="display: none;">
+                <div class="resultado_quiz" id="resul" style="display: block;">
 
                     <div class="resultado_quiz_tai" id="resultado_tai">
                         <div class="fundo_quiz_tai" id="resultado_background">
@@ -248,19 +248,19 @@
                     <div class="metrica">
                         <div class="metrica_resultado_escolha">
                             <div class="titulo_metrica_resultadoquiz">
-                                <span>RANKING DOS VILÕES PREFERIDOS DA COMUNIDADE</span>
+                                <span>QUANTIDADE DE PONTOS EM CADA PERSONAGEM</span>
                             </div>
                             <div class="metrica_tai">
                                 <img src="assets/imgs/img-quiz/mTai.png" alt="">
-                                <span id="metrica_tai"></span>
+                                <span id="metrica_tai">0</span>
                             </div>
                             <div class="metrica_shen">
                                 <img src="assets/imgs/img-quiz/mShen.png" alt="">
-                                <span id="metrica_shen"></span>
+                                <span id="metrica_shen">0</span>
                             </div>
                             <div class="metrica_kai">
                                 <img src="assets/imgs/img-quiz/mKai.png" alt="">
-                                <span id="metrica_kai"></span>
+                                <span id="metrica_kai">0</span>
                             </div>
                         </div>
     
@@ -270,15 +270,15 @@
                             </div>
                             <div class="metrica_tai">
                                 <img src="assets/imgs/img-quiz/mTai2.png" alt="">
-                                <span id="metrica_tai"></span>
+                                <span id="metrica_tai">0</span>
                             </div>
                             <div class="metrica_shen">
                                 <img src="assets/imgs/img-quiz/mShen2.png" alt="">
-                                <span id="metrica_shen"></span>
+                                <span id="metrica_shen">0</span>
                             </div>
                             <div class="metrica_kai">
                                 <img src="assets/imgs/img-quiz/mKai2.png" alt="">
-                                <span id="metrica_kai"></span>
+                                <span id="metrica_kai">0</span>
                             </div>
                         </div>
                     </div>
@@ -295,19 +295,19 @@
         /* TAI LUNG */
         {
             id: 1,
-            pontos: 0,
+            pontos: 0
         },
 
         /* LORD SHEN */
         {
             id: 2,
-            pontos: 0,
+            pontos: 0
         },
 
         /* KAI */
         {
             id: 3,
-            pontos: 0,
+            pontos: 0
         }
     ]
 
@@ -346,6 +346,7 @@
         4 - Tudo   
         */
 
+        contador++
         switch (id) {
             case 1:
                 resultado[0].pontos += 3
@@ -362,23 +363,24 @@
                 resultado[2].pontos += 3
                 break;
         }
-
-
-
     }
 
     /* VALIDAÇÃO - QUAL PERSONAGEM O USUARIO TIROU */
 
+    var contador = 0;
     var cont = 0;
-    var pontos = 0;
+    var p = 0;
 
     function resultado_final() {
-        for (var i = 0; i <= 3; i++) {
-            if (resultado[i].pontos > pontos) {
+        for (var i = 0; i < 3; i++) {
+            var resul = resultado[i].pontos
+            if (resul > p) {
                 cont = resultado[i].id
-                pontos = resultado[i].pontos
+                p = resultado[i].pontos
             }
         }
+        quizResultado();
+        registro();
     }
 
 
@@ -396,12 +398,31 @@
             .then(function (resposta) {
                 if (resposta.ok) {
                     resposta.json()
-                        .then(function (resultado) {
-                            nomePersonagem.innerHTML = `${resultado[0].nome}`;
-                            imagemPersonagem.src = `${resultado[0].imagem}`;
-                            descricaoPersonagem.innerHTML = `${resultado[0].descricao}`;
+                        .then(function (resultados) {
+                            nomePersonagem.innerHTML = `${resultados[0].nome}`;
+                            imagemPersonagem.src = `${resultados[0].imagem}`;
+                            descricaoPersonagem.innerHTML = `${resultados[0].descricao}`;
                         })
                 }
             })
+    }
+
+    function registro () {
+        var usuario = sessionStorage.ID_USUARIO;
+
+        fetch(`/quiz/registro`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                usuario,
+                cont
+            })
+        }).then(function(resposta) {
+            if(resposta.ok) {
+                true
+            }
+        })
     }
 </script>

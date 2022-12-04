@@ -514,3 +514,24 @@
 .metrica_kai img {
     height: 20vh;
 }
+
+.metrica_tai span {
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+.metrica_shen span{
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 20px;
+
+}
+
+.metrica_kai span {
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 20px;
+
+}
+
