@@ -22,6 +22,7 @@ body {
     height: 10vh;
     padding-left: 50px;
     padding-right: 50px;
+    z-index: 999;
 }
 
 .header .container {

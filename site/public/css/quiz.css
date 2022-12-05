@@ -515,23 +515,65 @@
     height: 20vh;
 }
 
+
+.metrica_tai2 img {
+    height: 20vh;
+}
+
+.metrica_shen2 img{
+    height: 20vh;
+}
+
+.metrica_kai2 img {
+    height: 20vh;
+}
+
+
 .metrica_tai span {
     position: absolute;
     color: #f1f1f1;
-    font-size: 20px;
+    font-size: 80px;
+    margin-top: 34px;
+    margin-left: -100px;
 }
 
 .metrica_shen span{
     position: absolute;
     color: #f1f1f1;
-    font-size: 20px;
-
+    font-size: 80px;
+    margin-top: 34px;
+    margin-left: -100px;
 }
 
 .metrica_kai span {
     position: absolute;
     color: #f1f1f1;
-    font-size: 20px;
+    font-size: 80px;
+    margin-top: 34px;
+    margin-left: -100px;
+}
 
+.metrica_tai2 span {
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 80px;
+    margin-top: 34px;
+    margin-left: -210px;
+}
+
+.metrica_shen2 span {
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 80px;
+    margin-top: 34px;
+    margin-left: -210px;
+}
+
+.metrica_kai2 span {
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 80px;
+    margin-top: 34px;
+    margin-left: -210px;
 }
 

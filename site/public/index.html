@@ -8,8 +8,6 @@
 
     <title>Poonda! | Página Inicial</title>
 
-    <script src="./js/funcoes.js"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sobremim.css">
@@ -37,11 +35,14 @@
                 <li>
                     <a href="quiz.html">Quiz</a>
                 </li>
-                <li>
+                <li id="login">
                     <a href="login.html">Login</a>
                 </li>
-                <li>
+                <li id="cadastro">
                     <a href="cadastro.html">Cadastro</a>
+                </li>
+                <li id="sai" style="display: none;">
+                    <a onclick="sair()" href="login.html">Sair</a>
                 </li>
             </ul>
         </div>
@@ -258,3 +259,5 @@
     });
 
 </script>
+
+<script src="./js/funcoes.js"></script>

@@ -21,9 +21,20 @@ function registro(usuario, cont) {
     return database.executar(instrucao);
 }
 
+function ranking() {
+
+    var instrucao = `
+        select count(fkPersonagem) 'Personagem' from quiz 
+        group by fkPersonagem
+            order by fkPersonagem asc;
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
 
 
 module.exports = {
     quizResultado,
-    registro
+    registro,
+    ranking
 };

@@ -441,7 +441,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-top: -200px;
+    margin-top: -160px;
     top: 1250px;
   
 }
@@ -469,6 +469,7 @@ html {
     height: 9vh;
     border-radius: 6px;
     font-size: 40px;
+    cursor: pointer;
 }
 
 .po_btn_icon {

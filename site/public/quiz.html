@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poonda! Quiz</title>
 
-    <script src="./js/funcoes.js"></script>
-
     <link rel="stylesheet" href="css/sobremim.css">
     <link rel="stylesheet" href="css/quiz.css">
     <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap')" rel="stylesheet">
@@ -34,11 +32,14 @@
                 <li>
                     <a href="quiz.html">Quiz</a>
                 </li>
-                <li>
+                <li id="login">
                     <a href="login.html">Login</a>
                 </li>
-                <li>
+                <li id="cadastro">
                     <a href="cadastro.html">Cadastro</a>
+                </li>
+                <li id="sai" style="display: none;">
+                    <a onclick="sair()" href="login.html">Sair</a>
                 </li>
             </ul>
         </div>
@@ -229,7 +230,7 @@
 
                 <!-- RESULTADO QUIZ  -->
 
-                <div class="resultado_quiz" id="resul" style="display: block;">
+                <div class="resultado_quiz" id="resul" style="display: none;">
 
                     <div class="resultado_quiz_tai" id="resultado_tai">
                         <div class="fundo_quiz_tai" id="resultado_background">
@@ -268,17 +269,17 @@
                             <div class="titulo_metrica_resultadoquiz">
                                 <span>RANKING DO RESULTADO DE CADA PESSOA</span>
                             </div>
-                            <div class="metrica_tai">
+                            <div class="metrica_tai2">
                                 <img src="assets/imgs/img-quiz/mTai2.png" alt="">
-                                <span id="metrica_tai">0</span>
+                                <span id="metrica_tai2">0</span>
                             </div>
-                            <div class="metrica_shen">
+                            <div class="metrica_shen2">
                                 <img src="assets/imgs/img-quiz/mShen2.png" alt="">
-                                <span id="metrica_shen">0</span>
+                                <span id="metrica_shen2">0</span>
                             </div>
-                            <div class="metrica_kai">
+                            <div class="metrica_kai2">
                                 <img src="assets/imgs/img-quiz/mKai2.png" alt="">
-                                <span id="metrica_kai">0</span>
+                                <span id="metrica_kai2">0</span>
                             </div>
                         </div>
                     </div>
@@ -402,6 +403,9 @@
                             nomePersonagem.innerHTML = `${resultados[0].nome}`;
                             imagemPersonagem.src = `${resultados[0].imagem}`;
                             descricaoPersonagem.innerHTML = `${resultados[0].descricao}`;
+                            metrica_tai.innerHTML = `${resultado[0].pontos}`;
+                            metrica_shen.innerHTML = `${resultado[1].pontos}`;
+                            metrica_kai.innerHTML = `${resultado[2].pontos}`;
                         })
                 }
             })
@@ -421,8 +425,23 @@
             })
         }).then(function(resposta) {
             if(resposta.ok) {
-                true
+                ranking();
+            }
+        })
+    }
+
+    function ranking () {
+        fetch(`/quiz/ranking`)
+        .then((resultado) =>{
+            if(resultado.ok) {
+                resultado.json().then((dado) =>{
+                    metrica_tai2.innerHTML = `${dado[0].Personagem}`;
+                    metrica_shen2.innerHTML = `${dado[1].Personagem}`;
+                    metrica_kai2.innerHTML = `${dado[2].Personagem}`;
+                })
             }
         })
     }
 </script>
+
+<script src="./js/funcoes.js"></script>

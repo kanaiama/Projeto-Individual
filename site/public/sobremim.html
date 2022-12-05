@@ -8,7 +8,6 @@
 
     <title>Poonda! Sobre o criador</title>
 
-    <script src="./js/funcoes.js"></script>
 
     <link rel="stylesheet" href="css/sobremim.css">
     <link
@@ -26,22 +25,25 @@
                 Poonda!
             </p></a>
         </div>
-            <div class="container">
-                <ul class="navbar">
-                    <li>
-                        <a href="sobremim.html">Sobre o Criador</a>
-                    </li>
-                    <li>
-                        <a href="quiz.html">Quiz</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="cadastro.html">Cadastro</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="container">
+            <ul class="navbar">
+                <li>
+                    <a href="sobremim.html">Sobre o Criador</a>
+                </li>
+                <li>
+                    <a href="quiz.html">Quiz</a>
+                </li>
+                <li id="login">
+                    <a href="login.html">Login</a>
+                </li>
+                <li id="cadastro">
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+                <li id="sai" style="display: none;">
+                    <a onclick="sair()" href="login.html">Sair</a>
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- FIM DO HEADER -->
 
@@ -134,3 +136,4 @@
         banner2.classList.remove('zindex')
     }
 </script>
+<script src="./js/funcoes.js"></script>
