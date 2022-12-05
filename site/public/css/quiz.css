@@ -476,7 +476,8 @@
 
 .descricao_resultado span {
     text-align: justify;
-    font-size: 30px;
+    margin-top: -10px;
+    font-size: 40px;
     color: #f1f1f1;
 }
 

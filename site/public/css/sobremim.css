@@ -123,7 +123,8 @@ a {
     justify-content: center;
     text-align: center;
     color: #F1F1F1;
-    font-size: 30px;
+    margin-top: 30px;
+    font-size: 50px;
     width: 80vw;
 }
 
@@ -160,7 +161,7 @@ a {
     align-items: center;
     text-align: center;
     color: #F1F1F1;
-    font-size: 30px;
+    font-size: 38px;
     width: 80vw;
 }
 
@@ -174,7 +175,7 @@ a {
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-color: black
+    background-color: #090909
 }
 
 .banner3.zindex{

@@ -406,12 +406,13 @@
 }
 
 .frase_s2 span {
-    font-size: 40px;
+    margin-top: -90px;
+    font-size: 45px;
     color: #f1f1f1;
 }
 
 .frase_finals2 {
-    font-size: 40px;
+    font-size: 45px;
     color: #f1f1f1;
     width: 35vw;
     height: 100%;
@@ -460,7 +461,7 @@
 }
 
 .frase_s3 span {
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 80px;
     width: 90vw;
     color: #f1f1f1;
@@ -481,7 +482,8 @@
 }
 
 .img_frase_s3 img {
-    height: 70vh;
+    margin-top: -500px;
+    height: 75vh;
     width: 100vw;
     border-radius: 30px
 }
