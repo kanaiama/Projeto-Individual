@@ -129,6 +129,10 @@ html {
     color: #3E09AF;
 }
 
+.iconTai .lung {
+    color: #f1f1f1;
+}
+
 .container_tailung_shifu {
     background-size: cover;
     background-image: url(../assets/imgs/sbTaiLung.png);

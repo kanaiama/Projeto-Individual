@@ -101,6 +101,7 @@
 
 
 .btn_login {
+    cursor: pointer;
     outline: none;
     border: none;
     border-radius: 10px;

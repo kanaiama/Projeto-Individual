@@ -442,6 +442,17 @@
             }
         })
     }
+
+    function verificarQuiz() {
+        var usuario = sessionStorage.ID_USUARIO;
+
+        if(usuario == null) {
+            alert("Você precisa estar logado para fazer o Quiz!")
+            window.location = "./login.html"
+        }
+    }
+
+    verificarQuiz()
 </script>
 
 <script src="./js/funcoes.js"></script>

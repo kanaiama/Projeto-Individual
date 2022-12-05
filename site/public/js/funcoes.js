@@ -5,6 +5,7 @@ function sair () {
 function verificar() {
     var usuario = sessionStorage.ID_USUARIO;
 
+
     if(usuario != null) {
         login.style.display = 'none'
         cadastro.style.display = 'none'
@@ -15,5 +16,7 @@ function verificar() {
         sai.style.display = 'none'
     }
 }
+
+
 
 verificar()
