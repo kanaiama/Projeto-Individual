@@ -262,7 +262,7 @@
 
 
 .div_titulo_sinopse h2 {
-    font-size: 90px;
+    font-size: 100px;
     color: #f1f1f1;
     text-align: justify;
 }
@@ -274,7 +274,7 @@
     background-color: #00354B;
     height: 140vh;
     width: 70vw;
-    margin-left: 367px;
+    margin-left: 390px;
     border-radius: 70px 0 0 70px ;
 }
 
@@ -313,7 +313,7 @@
 
 .imagem_sinopse1 span {
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 45px;
     text-align: justify;
     margin-left: 100px;
     margin-right: 70px;
@@ -331,7 +331,7 @@
 
 .frase_final_s1 span {
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 45px;
     text-align: justify;
 }
 
@@ -461,7 +461,7 @@
 
 .frase_s3 span {
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 80px;
     width: 90vw;
     color: #f1f1f1;
     text-align: justify;
@@ -471,7 +471,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 70vh;
+    height: 88vh;
     width: 100%;
 }
 

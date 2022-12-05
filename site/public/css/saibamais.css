@@ -44,7 +44,7 @@ html {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     text-align: justify;
     width: 80%;
 }
@@ -74,7 +74,7 @@ html {
 
 .frase_poo_avancando {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 10px;
     width: 40%;
     text-align: justify;
@@ -165,7 +165,7 @@ html {
 
 .frase_tai_shifu{
     margin-right: 20px;
-    font-size: 32px;
+    font-size: 40px;
     color: white;
     width: 40%;
     text-align: justify;
@@ -185,10 +185,10 @@ html {
 .frase_gif_tai span {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 70px;
     width: 80%;
-    font-size: 28px;
+    font-size: 37px;
     color: white;
     text-align: justify;
 }
@@ -245,7 +245,7 @@ html {
     height: 80vh;
     text-align: justify;
     color: white;
-    font-size: 32px;
+    font-size: 40px;
     width: 60%;
     margin-right: 60px;
 }
@@ -293,19 +293,6 @@ html {
     justify-content: flex-end;
 }
 
-/* .banner_lordshen_sb_2 {
-    display: flex;
-    align-items: center;
-    width: 1245px;
-    height: 440px;
-    left: -300px;
-    top: 800px;
-    background: #341212;
-    opacity: 0.7;
-    border-radius: 220px;
-
-} */
-
 .frase_lord_shen_banner2 {
     background: #341212;
     opacity: 0.7;
@@ -320,7 +307,7 @@ html {
 .frase_lord_shen_banner2 span{
     width: 43vw;
     margin-left: 40px;
-    font-size: 32px;
+    font-size: 40px;
     text-align: justify;
     color: white;
 }
@@ -391,7 +378,7 @@ html {
     width: 60%;
     text-align: justify;
     color: white;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 /* BANNER SECUNDÁRIO - KAI */
@@ -430,7 +417,7 @@ html {
 }
 .polygon_frase_kai span {
     margin-top: 100px;
-    font-size: 32px;
+    font-size: 40px;
     width: 90%;
     color: white;
 }
